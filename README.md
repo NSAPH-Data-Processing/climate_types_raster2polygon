@@ -18,7 +18,7 @@ raster2zcta for climate types
 * Zipcodes are "smaller" than zctas. Zipcode to zcta crosswalks have a single entry per zipcode. There might be zctas that point to multiple zipcodes. 
 * There is no official zip2zcta xwalk.
 * USD provides xwalks 2009 onwards. The yearly releases are not harmonized: there are changes in column names and other file format changes.
-* Within a single zcta edition, there are small differences in the xwalks across years.
+* Within a single zcta edition, there are small differences in the zip to zcta mapping across years.
 
 **Questions**
 
