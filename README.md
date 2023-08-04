@@ -6,7 +6,7 @@ raster2zcta for climate types
 **zcta** 
 
 * In theory, zctas change every 10 years and there are currently three editions: zcta500, zcta510 and zcta520
-* In practice, there are yearly zcta shp file realeases. Even for the same editions, there might be small differences between the releases.
+* In practice, there are yearly zcta shp file realeases. For the same editions there might be small differences between the releases.
 
 **zipcode**
 
