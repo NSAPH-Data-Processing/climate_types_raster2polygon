@@ -1,0 +1,7 @@
+# if files are stored within the local copy of the repository, then use null:
+input:
+  climate_types: null
+  shapefiles: null
+
+output:
+  climate_types_zip_zcta: null

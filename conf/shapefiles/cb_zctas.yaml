@@ -1,0 +1,26 @@
+# Purpose: Configuration file for the Census Bureau ZCTA shapefiles
+# https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
+url:
+  2010: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  2011: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  2012: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  2013: https://www2.census.gov/geo/tiger/GENZ2013/cb_2013_us_zcta510_500k.zip
+  2014: https://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_zcta510_500k.zip
+  2015: https://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_zcta510_500k.zip
+  2016: https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_zcta510_500k.zip
+  2017: https://www2.census.gov/geo/tiger/GENZ2017/shp/cb_2017_us_zcta510_500k.zip
+  2018: https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_zcta510_500k.zip
+  2019: https://www2.census.gov/geo/tiger/GENZ2019/shp/cb_2019_us_zcta510_500k.zip
+  2020: https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip
+idvar:
+  2010: ZCTA5
+  2011: ZCTA5
+  2012: ZCTA5
+  2013: ZCTA5CE10
+  2014: ZCTA5CE10
+  2015: ZCTA5CE10
+  2016: ZCTA5CE10
+  2017: ZCTA5CE10
+  2018: ZCTA5CE10
+  2019: ZCTA5CE10
+  2020: ZCTA5CE20
