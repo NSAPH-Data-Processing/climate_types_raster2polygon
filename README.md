@@ -111,3 +111,17 @@ or run the pipeline:
 ```bash
 snakemake --cores
 ```
+## Dockerized Pipeline
+
+Create the folder where you would like to store the output dataset.
+
+```bash 
+mkdir <path>/climate_types_zip_zcta
+```
+
+### Pull and Run:
+
+```bash
+docker pull nsaph/climate_types_zip_zcta:v1
+docker run -v <path>/climate_types_zip_zcta/:/app/data/output/climate_types_zip_zcta nsaph/climate_types_zip_zcta:v1
+```
