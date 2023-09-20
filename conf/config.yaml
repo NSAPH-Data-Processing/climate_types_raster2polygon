@@ -1,8 +1,9 @@
 defaults:
 - datapaths: datapaths
-- shapefiles: cb_zctas.yaml
+- shapefiles: cb_county.yaml
+- climate_keys: climate_keys.yaml
 
-year: 2013
+year: 2015
 
 # Climate types raw raster
 url:  https://figshare.com/ndownloader/files/12407516

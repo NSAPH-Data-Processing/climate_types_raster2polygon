@@ -3,5 +3,8 @@ input:
   climate_types: null
   shapefiles: null
 
+intermediate:
+  climate_pcts: null
+
 output:
   climate_types_zip_zcta: null

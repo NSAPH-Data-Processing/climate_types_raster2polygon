@@ -1,5 +1,6 @@
 # Purpose: Configuration file for ZCTA shapefiles
 # https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
+
 url:
   2000: https://www2.census.gov/geo/tiger/TIGER2010/ZCTA5/2000/tl_2010_us_zcta500.zip # latest ZCTA5CE00 available
   2010: https://www2.census.gov/geo/tiger/TIGER2020/ZCTA5/tl_2020_us_zcta510.zip # latest ZCTA5CE10 available

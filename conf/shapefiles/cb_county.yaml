@@ -1,0 +1,6 @@
+# a larger resolution for testing
+url:
+  2015: https://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_county_20m.zip
+
+idvar:
+ 2015: GEOID
