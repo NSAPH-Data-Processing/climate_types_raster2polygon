@@ -4,6 +4,53 @@ Code to produce a spatial aggregation from 1km tiff raster to zcta (tiger polygo
 
 Spatial aggregation of climate type information from grid (tiff) to zcta polygons (shp). In addition the information is merged with a zip2zcta crosswalk to allow mapping to either postal zipcode of census zcta.
 
+# Codebook Description
+
+---
+
+## Dataset Columns:
+
+1. **zip**: Represents the ZIP code.
+2. **zcta**: Represents the ZIP Code Tabulation Area.
+3. **climate_type_short**: The abbreviated code for each specific climate type.
+4. **climate_type_long**: The detailed description of each specific climate type.
+5. **Af - EF**: Each of these columns represents a specific climate type. The values within these columns will represent the percentage area corresponding to each climate type for a specific ZIP or ZCTA.
+
+---
+
+## Climate Types (Keys and Descriptions):
+
+- **Af**: Tropical, rainforest
+- **Am**: Tropical, monsoon
+- **Aw**: Tropical, savannah
+- **BWh**: Arid, desert, hot
+- **BWk**: Arid, desert, cold
+- **BSh**: Arid, steppe, hot
+- **BSk**: Arid, steppe, cold
+- **Csa**: Temperate, dry summer, hot summer
+- **Csb**: Temperate, dry summer, warm summer
+- **Csc**: Temperate, dry summer, cold summer
+- **Cwa**: Temperate, dry winter, hot summer
+- **Cwb**: Temperate, dry winter, warm summer
+- **Cwc**: Temperate, dry winter, cold summer
+- **Cfa**: Temperate, no dry season, hot summer
+- **Cfb**: Temperate, no dry season, warm summer
+- **Cfc**: Temperate, no dry season, cold summer
+- **Dsa**: Cold, dry summer, hot summer
+- **Dsb**: Cold, dry summer, warm summer
+- **Dsc**: Cold, dry summer, cold summer
+- **Dsd**: Cold, dry summer, very cold winter
+- **Dwa**: Cold, dry winter, hot summer
+- **Dwb**: Cold, dry winter, warm summer
+- **Dwc**: Cold, dry winter, cold summer
+- **Dwd**: Cold, dry winter, very cold winter
+- **Dfa**: Cold, no dry season, hot summer
+- **Dfb**: Cold, no dry season, warm summer
+- **Dfc**: Cold, no dry season, cold summer
+- **Dfd**: Cold, no dry season, very cold winter
+- **ET**: Polar, tundra
+- **EF**: Polar, frost
+
 ## Run
 
 Clone the repository and create a conda environment.
