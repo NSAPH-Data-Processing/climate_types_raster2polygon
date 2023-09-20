@@ -12,6 +12,6 @@ dependencies:
   - pip=23.1.2
   - pip:
     - hydra-core==1.2.0
-    - snakemake=7.30.1
+    - snakemake==7.30.1
     - wget==3
     - black
