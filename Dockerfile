@@ -15,4 +15,4 @@ RUN mamba env update -n base -f requirements.yml
 # Create symlinks to data placeholders
 RUN python src/create_data_symlinks.py
 
-CMD ["pipeline.sh"]
+CMD ["bash pipeline.sh"]
