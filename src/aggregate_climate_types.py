@@ -53,7 +53,7 @@ def main(cfg):
     # for each entry in stats count the unique values
     avs = {}
     for i, s in enumerate(stats):
-        n = s["count"]
+        n = s["count"] - s.get(0, 0)
         avs[ids[i]] = {k: v / n for k, v in s.items() if k != "count"}
 
     # log some statistics of what ran
@@ -88,7 +88,7 @@ def main(cfg):
     clkey = cfg.climate_keys
     sparse = []
     for k, v in avs.items():
-        row = {"zcta": k}
+        row = {"id": k}
         for c in clkey.keys():
             short_name = clkey[c][0]
             row[short_name] = v.get(c, 0.0)
