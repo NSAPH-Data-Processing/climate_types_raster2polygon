@@ -20,6 +20,12 @@ def main(cfg):
         nodata = src.nodata
         num_layers = src.count
 
+    # # debugger notes: show the raster
+    # import matplotlib.pyplot as plt
+    # plt.imshow(layer == 0) #modify layer value to see different climate types
+    # plt.show()
+
+
     logging.info(
         "Read file with characteristics:\n"
         f"Transform:\n{transform}\n"
