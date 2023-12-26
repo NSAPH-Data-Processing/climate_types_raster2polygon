@@ -1,22 +1,17 @@
-# climate_types_zip_zcta
+# climate_types_raster2polygon
 
-Code to produce a spatial aggregation from 1km tiff raster to zcta (tiger polygons) of [Koppen-Geiger climate types](https://www.nature.com/articles/sdata2018214).
-
-Spatial aggregation of climate type information from grid (tiff) to zcta polygons (shp). In addition the information is merged with a zip2zcta crosswalk to allow mapping to either postal zipcode of census zcta.
-
-# Codebook Description
+Code to produce spatial aggregations of [Koppen-Geiger climate types](https://www.nature.com/articles/sdata2018214). The spatial aggregation are performed from climate type information from grid/raster (tiff) to polygons (shp).
 
 ---
+
+# Codebook
 
 ## Dataset Columns:
 
-1. **zip**: Represents the ZIP code.
-2. **zcta**: Represents the ZIP Code Tabulation Area.
-3. **climate_type_short**: The abbreviated code for each specific climate type.
-4. **climate_type_long**: The detailed description of each specific climate type.
-5. **Af - EF**: Each of these columns represents a specific climate type. The values within these columns will represent the percentage area corresponding to each climate type for a specific ZIP or ZCTA.
-
----
+1. **id**: Represents the id of a given polygon in a shp file.
+2. **climate_type_short**: The abbreviated code for each specific climate type.
+3. **climate_type_long**: The detailed description of each specific climate type.
+4. **Af - EF**: Each of these columns represents a specific climate type. The values within these columns will represent the percentage area corresponding to each climate type for a specific polygon.
 
 ## Climate Types (Keys and Descriptions):
 
@@ -51,7 +46,9 @@ Spatial aggregation of climate type information from grid (tiff) to zcta polygon
 - **ET**: Polar, tundra
 - **EF**: Polar, frost
 
-## Run
+---
+
+# Run
 
 Clone the repository and create a conda environment.
 
@@ -88,21 +85,16 @@ ln -s <output_path> . #paths as found in data/output/README.md
 
 The README.md files inside the `/data` subfolders contain path documentation for NSAPH internal purposes.
 
-git clone <https://github.com/<user>/repo>
-cd <repo>
-conda env create -f requirements.yaml
-conda activate sectors_pollution_env
-
 ### Pipeline
 
 You can run the pipeline steps manually or run the snakemake pipeline described in the Snakefile.
 
 **run pipeline steps manually**
 
-* step 1: download shapefiles
-
 ```bash
-python ./src/generate_counts.py --year <year>
+python src/download_shapefile.py
+python src/download_climate_types.py
+python src/aggregate_climate_types.py
 ```
 
 **run snakemake pipeline**
@@ -116,12 +108,12 @@ snakemake --cores
 Create the folder where you would like to store the output dataset.
 
 ```bash 
-mkdir <path>/climate_types_zip_zcta
+mkdir <path>/climate_types_raster2polygon
 ```
 
 ### Pull and Run:
 
 ```bash
-docker pull nsaph/climate_types_zip_zcta:v1
-docker run -v <path>/climate_types_zip_zcta/:/app/data/output/climate_types_zip_zcta nsaph/climate_types_zip_zcta:v1
+docker pull nsaph/climate_types_raster2polygon
+docker run -v <path>/climate_types_raster2polygon/:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
 ```

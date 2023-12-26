@@ -1,6 +1,9 @@
 # Configuration file with the Census Bureau county shapefiles information (cartographic boudaries)
 
-# Only one shapefile is used. cfg.year determines which key to use for download.
+year: 2015
+polygon_name: county
+
+# Only one shapefile is used. `year` determines which key to use for download.
 url:
   2015: https://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_county_20m.zip
 
