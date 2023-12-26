@@ -1,4 +1,4 @@
-name: climate_types_zip_zcta
+name: climate_types_raster2polygon
 channels:
  - defaults
  - conda-forge
