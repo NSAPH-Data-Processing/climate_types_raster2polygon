@@ -7,7 +7,7 @@ import wget
 
 @hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
-    url = cfg.url
+    url = cfg.climate_types_url
 
     tgt = "data/input/climate_types"
 
