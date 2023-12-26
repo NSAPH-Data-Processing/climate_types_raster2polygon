@@ -1,7 +1,10 @@
 # Configuration file with the ZCTA shapefiles (tiger line)
 # https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
 
-# only one shapefile is used. cfg.year determines which key to use for download.
+year: 2010
+polygon_name: zcta
+
+# only one shapefile is used. `year` determines which key to use for download.
 url:
   2000: https://www2.census.gov/geo/tiger/TIGER2010/ZCTA5/2000/tl_2010_us_zcta500.zip # latest ZCTA5CE00 available
   2010: https://www2.census.gov/geo/tiger/TIGER2020/ZCTA5/tl_2020_us_zcta510.zip # latest ZCTA5CE10 available

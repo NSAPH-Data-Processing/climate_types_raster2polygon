@@ -1,7 +1,10 @@
 # Configuration file with the ZCTA shapefiles (cartographic boudaries)
 # https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
 
-# only one shapefile is used. cfg.year determines which key to use for download.
+year: 2015
+polygon_name: zcta
+
+# only one shapefile is used. `year` determines which key to use for download.
 url:
   2010: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
   2011: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
