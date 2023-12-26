@@ -11,7 +11,7 @@ import geopandas as gpd
 @hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
     # log statistics (transform, crs, nodata)
-    raster_path = f"data/input/climate_types/{cfg.raster}.tif"
+    raster_path = f"data/input/climate_types/{cfg.climate_types_file}"
     logging.info(f"Reading raster {raster_path}")
     with rasterio.open(raster_path) as src:
         transform = src.transform
@@ -36,8 +36,8 @@ def main(cfg):
     )
 
     # read shapefile
-    idvar = cfg.shapefiles.idvar[cfg.shapefiles.year]
-    shp_path = f"data/input/shapefiles/shapefile_{cfg.shapefiles.year}/shapefile.shp"
+    idvar = cfg.shapefiles[cfg.shapefile_polygon_name][cfg.shapefile_year].idvar
+    shp_path = f"data/input/shapefiles/shapefile_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}/shapefile.shp"
     logging.info(f"Reading shapefile {shp_path}")
     shp = gpd.read_file(shp_path)
     logging.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
@@ -49,7 +49,7 @@ def main(cfg):
         shp_path,
         raster_path,
         stats="count",
-        all_touched=cfg.all_touched,
+        all_touched=True,
         geojson_out=False,
         categorical=True,
         nodata=nodata,
@@ -79,11 +79,11 @@ def main(cfg):
     logging.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
     # save files
-    intermediate_dir = f"data/intermediate/climate_pcts/climate_pcts_{cfg.shapefiles.year}"
+    intermediate_dir = f"data/intermediate/climate_pcts/climate_pcts_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}"
     os.makedirs(intermediate_dir, exist_ok=True)
     pcts_file = f"{intermediate_dir}/pcts_file.json"
     class_file = f"{intermediate_dir}/class_file.csv"
-    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefiles.polygon_name}.csv"
+    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
 
     logging.info(f"Saving pcts to {pcts_file}")
     with open(pcts_file, "w") as f:

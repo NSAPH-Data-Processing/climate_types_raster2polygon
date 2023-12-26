@@ -50,6 +50,8 @@ Code to produce spatial aggregations of [Koppen-Geiger climate types](https://ww
 
 # Run
 
+### Conda environment
+
 Clone the repository and create a conda environment.
 
 ```bash
@@ -67,23 +69,21 @@ mamba env create -f requirements.yml
 mamba activate <env_name>
 ```
 
-### Entrypoints
+### Input and output paths
 
-Add symlinks to input, intermediate and output folders inside the corresponding `/data` subfolders.
+Determine the configuration file to be used in `cfg.datapaths`. The `input`, `intermediate`, and `output` arguments are used in `create_data_symlinks.py` to fix the paths or directories from which a step in the pipeline reads/writes its input/output data inside the corresponding `/data` subfolders.
 
-For example:
+If `cfg.datapaths` points to `<input_path>` or `<output_path>`, then `create_data_symlinks.py` will automatically create a symlink as in the following example:
 
 ```bash
 export HOME_DIR=$(pwd)
 
 cd $HOME_DIR/data/input/ .
-ln -s <input_path> . #paths as found in data/input/README.md
+ln -s <input_path> . 
 
 cd $HOME_DIR/data/output/
-ln -s <output_path> . #paths as found in data/output/README.md
+ln -s <output_path> . 
 ```
-
-The README.md files inside the `/data` subfolders contain path documentation for NSAPH internal purposes.
 
 ### Pipeline
 
