@@ -7,4 +7,4 @@ intermediate:
   climate_pcts: null
 
 output:
-  climate_types_zip_zcta: null
+  climate_types_raster2polygon: null
