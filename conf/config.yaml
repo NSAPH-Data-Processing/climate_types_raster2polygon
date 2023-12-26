@@ -3,8 +3,6 @@ defaults:
 - shapefiles: cb_county.yaml
 - climate_keys: climate_keys.yaml
 
-year: 2015
-
 # Climate types raw raster
 url:  https://figshare.com/ndownloader/files/12407516
 raster: Beck_KG_V1_present_0p5
