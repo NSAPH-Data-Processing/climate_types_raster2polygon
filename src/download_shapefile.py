@@ -6,10 +6,9 @@ import wget
 
 @hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
-    year = cfg.shapefiles.year
-    url = cfg.shapefiles.url[year]
+    url = cfg.shapefiles[cfg.shapefile_polygon_name][cfg.shapefile_year].url
 
-    tgt = f"data/input/shapefiles/shapefile_{year}"
+    tgt = f"data/input/shapefiles/shapefile_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}"
 
     tgtdir = os.path.dirname(tgt)
     tgtfile = os.path.basename(tgt)
