@@ -118,3 +118,14 @@ mkdir <path>/climate_types_raster2polygon
 docker pull nsaph/climate_types_raster2polygon
 docker run -v <path>/climate_types_raster2polygon/:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
 ```
+
+If you are interested in storing the input raw and intermediate data run
+
+```bash
+docker run -v ./data:/app/data/ nsaph/climate_types_raster2polygon
+```
+
+If you want to build your own image use
+```
+docker build -t <image_name> .
+```
