@@ -1,6 +1,6 @@
 defaults:
-- datapaths: datapaths
-- shapefiles: cb_county.yaml
+- datapaths: datapaths.yaml
+- shapefiles: shapefiles.yaml
 - climate_keys: climate_keys.yaml
 
 # Climate types raw raster information

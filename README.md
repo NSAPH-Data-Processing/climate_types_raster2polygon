@@ -71,9 +71,9 @@ mamba activate <env_name>
 
 ### Input and output paths
 
-Determine the configuration file to be used in `cfg.datapaths`. The `input`, `intermediate`, and `output` arguments are used in `create_data_symlinks.py` to fix the paths or directories from which a step in the pipeline reads/writes its input/output data inside the corresponding `/data` subfolders.
+Determine the configuration file to be used in `cfg.datapaths`. The `input`, `intermediate`, and `output` arguments are used in `utils/create_dir_paths.py` to fix the paths or directories from which a step in the pipeline reads/writes its input/output data inside the corresponding `/data` subfolders.
 
-If `cfg.datapaths` points to `<input_path>` or `<output_path>`, then `create_data_symlinks.py` will automatically create a symlink as in the following example:
+If `cfg.datapaths` points to `<input_path>` or `<output_path>`, then `utils/create_dir_paths.py` will automatically create a symlink as in the following example:
 
 ```bash
 export HOME_DIR=$(pwd)
@@ -101,8 +101,9 @@ python src/aggregate_climate_types.py
 or run the pipeline:
 
 ```bash
-snakemake --cores
+snakemake --cores 1 --configfile conf/config.yaml
 ```
+
 ## Dockerized Pipeline
 
 Create the folder where you would like to store the output dataset.
@@ -116,4 +117,15 @@ mkdir <path>/climate_types_raster2polygon
 ```bash
 docker pull nsaph/climate_types_raster2polygon
 docker run -v <path>/climate_types_raster2polygon/:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
+```
+
+If you are interested in storing the input raw and intermediate data run
+
+```bash
+docker run -v ./data:/app/data/ nsaph/climate_types_raster2polygon
+```
+
+If you want to build your own image use
+```
+docker build -t <image_name> .
 ```
