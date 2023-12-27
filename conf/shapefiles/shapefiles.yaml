@@ -5,9 +5,6 @@ cb_county: #County shapefiles (cartographic boudaries) https://www.census.gov/pr
   2015:
     url: https://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_county_20m.zip
     idvar: GEOID
-  2020:
-    url: https://www2.census.gov/geo/tiger/TIGER2020/COUNTY/tl_2020_us_county.zip
-    idvar: GEOID
 cb_zcta: #ZCTA shapefiles (cartographic boudaries) https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
   2010:
     url: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
