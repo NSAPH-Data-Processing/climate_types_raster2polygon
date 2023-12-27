@@ -12,7 +12,7 @@ RUN git clone https://github.com/NSAPH-Data-Processing/climate_types_raster2poly
 RUN mamba env update -n base -f requirements.yml 
 #&& mamba clean -a
 
-# Create symlinks to data placeholders
-RUN python src/create_data_symlinks.py
+# Create paths to data placeholders
+RUN python utils/create_dir_paths.py
 
 CMD ["bash", "/app/pipeline.sh"]
