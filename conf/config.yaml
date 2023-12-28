@@ -5,11 +5,16 @@ defaults:
 
 # Climate types raw raster information
 climate_types_url:  https://figshare.com/ndownloader/files/12407516
-climate_types_file: Beck_KG_V1_present_0p5.tif
+climate_types_file: Beck_KG_V1_present_0p0083.tif  # it's the one at highest resolution
+  # - Beck_KG_V1_present_0p083.tif
+  # - Beck_KG_V1_present_0p5.tif
+  # - Beck_KG_V1_present_conf_0p0083.tif  # this is uncertainty
+  # - Beck_KG_V1_present_conf_0p083.tif
+  # - Beck_KG_V1_present_conf_0p5.tif
 
 # Shapefiles information
 shapefile_year: 2015 #to be matched with cfg.shapefiles
-shapefile_polygon_name: cb_county #to be matched with cfg.shapefiles
+shapefile_polygon_name: cb_zcta #to be matched with cfg.shapefiles
 
 hydra:
   run:
