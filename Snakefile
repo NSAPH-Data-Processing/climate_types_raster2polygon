@@ -13,12 +13,10 @@ rule download_climate_types:
 
 rule download_shapefiles:
     output:
-        # for simplification, only the geometric data .shp file is listed
-        # but the shape index .shx, attribute dara .dbf, and 
-        # other shapefile accompanying files are required
-        expand("data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp", 
+        expand("data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.{ext}", 
                polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"]) 
+               year=config["shapefile_year"], 
+               ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]) 
     shell:
         "python src/download_shapefile.py"
 
