@@ -4,6 +4,12 @@ Code to produce spatial aggregations of [Koppen-Geiger climate types](https://ww
 
 ---
 
+# Climate Types
+
+Raw climate type maps are referenced to the World Geodetic Reference System 1984 (WGS 84) ellipsoid and made available at three resolutions (0.0083°, 0.083°, and 0.5°; approximately 1 km, 10 km, and 50 km at the equator, respectively).
+
+---
+
 # Codebook
 
 ## Dataset Columns:
