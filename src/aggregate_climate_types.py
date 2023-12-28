@@ -8,11 +8,17 @@ import rasterstats
 import pandas as pd
 import geopandas as gpd
 
+# configure logger to print at info level
+logging.basicConfig(level=logging.INFO)
+LOGGER = logging.getLogger(__name__)
+
 @hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
-    # log statistics (transform, crs, nodata)
+    LOGGER.info("""
+        # Extract transform, crs, nodata from raster
+    """)
     raster_path = f"data/input/climate_types/{cfg.climate_types_file}"
-    logging.info(f"Reading raster {raster_path}")
+    LOGGER.info(f"Reading raster {raster_path}")
     with rasterio.open(raster_path) as src:
         transform = src.transform
         crs = src.crs
@@ -25,9 +31,7 @@ def main(cfg):
     # plt.imshow(layer == 0) #modify layer value to see different climate types
     # plt.show()
 
-
-    logging.info(
-        "Read file with characteristics:\n"
+    LOGGER.info("Read file with characteristics:\n"
         f"Transform:\n{transform}\n"
         f"CRS: {crs}\n"
         f"NoData: {nodata}\n"
@@ -38,13 +42,13 @@ def main(cfg):
     # read shapefile
     idvar = cfg.shapefiles[cfg.shapefile_polygon_name][cfg.shapefile_year].idvar
     shp_path = f"data/input/shapefiles/shapefile_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}/shapefile.shp"
-    logging.info(f"Reading shapefile {shp_path}")
+    LOGGER.info(f"Reading shapefile {shp_path}")
     shp = gpd.read_file(shp_path)
-    logging.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
+    LOGGER.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
     ids = shp[idvar]
 
     # compute zonal stats
-    logging.info(f"Computing zonal stats")
+    LOGGER.info(f"Computing zonal stats")
     stats = rasterstats.zonal_stats(
         shp_path,
         raster_path,
@@ -54,13 +58,22 @@ def main(cfg):
         categorical=True,
         nodata=nodata,
     )
-    logging.info(f"Done.")
+    LOGGER.info(f"Done.")
 
     # for each entry in stats count the unique values
     avs = {}
     for i, s in enumerate(stats):
-        n = s["count"] - s.get(0, 0)
-        avs[ids[i]] = {k: v / n for k, v in s.items() if k != "count"}
+        n0 = s.get(0, 0)
+        n = s["count"] - n0
+        if n > 0:
+            avs[ids[i]] = {k: v / n for k, v in s.items() if k != "count"}
+        else:
+            # log polygon id if it has no climate intersection, 
+            # if the number of pixels with climate type 0 is equal to the total number of pixels
+            # this is the case for some polygons with area intersecting raster grids classified as 0 only
+            # climate class 0 is body of water
+            LOGGER.info(f"Polygon {ids[i]} has {n0} pixels with climate type 0")
+            avs[ids[i]] = {0: 1.0}
 
     # log some statistics of what ran
     m0 = np.mean([len(m) == 1 for m in avs.values()])
@@ -73,10 +86,10 @@ def main(cfg):
             if x[0] == x[1]:
                 frac_ties += 1 / len(avs)
 
-    logging.info(f"Fraction of locations with only one climate: {100 * m0:.2f}%")
-    logging.info(f"Fraction of locations more than one climate: {100 * m1:.2f}%")
-    logging.info(f"Fraction of locations more than two climates: {100 * m2:.2f}%")
-    logging.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
+    LOGGER.info(f"Fraction of locations with only one climate: {100 * m0:.2f}%")
+    LOGGER.info(f"Fraction of locations more than one climate: {100 * m1:.2f}%")
+    LOGGER.info(f"Fraction of locations more than two climates: {100 * m2:.2f}%")
+    LOGGER.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
     # save files
     intermediate_dir = f"data/intermediate/climate_pcts/climate_pcts_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}"
@@ -85,7 +98,7 @@ def main(cfg):
     class_file = f"{intermediate_dir}/class_file.csv"
     output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
 
-    logging.info(f"Saving pcts to {pcts_file}")
+    LOGGER.info(f"Saving pcts to {pcts_file}")
     with open(pcts_file, "w") as f:
         json.dump(avs, f)
 
@@ -99,7 +112,7 @@ def main(cfg):
     class_df["climate_type_short"] = class_df["climate_type_num"].map(codedict_short)
     class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long)
     class_df = class_df.drop(columns="climate_type_num")
-    logging.info(f"Saving classification to {class_file}")
+    LOGGER.info(f"Saving classification to {class_file}")
     class_df.to_csv(class_file, index=False)
 
     # transform the percentages into a sparse dataframe
@@ -114,7 +127,7 @@ def main(cfg):
 
     output_df = pd.merge(class_df, output_df, on="id")
 
-    logging.info(f"Saving output into data/output/climate_types_zip_zcta \n {output_df.head()}")
+    LOGGER.info(f"Saving output into data/output/climate_types_zip_zcta \n {output_df.head()}")
     output_df.to_csv(output_file , index=False)
 
 if __name__ == "__main__":
