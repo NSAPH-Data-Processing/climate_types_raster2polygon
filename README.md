@@ -135,3 +135,8 @@ If you want to build your own image use
 ```
 docker build -t <image_name> .
 ```
+For multiplatform
+```
+docker buildx build --platform linux/amd64,linux/arm64 -t nsaph/census_series:<version> . --push
+```
+Remember this step is unnecessary as the built image is availabe under `nsaph/climate_types_raster2polygon:latest`.
