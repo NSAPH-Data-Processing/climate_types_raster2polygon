@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 import hydra
 import numpy as np
 import rasterio
@@ -64,16 +63,16 @@ def main(cfg):
     avs = {}
     for i, s in enumerate(stats):
         n0 = s.get(0, 0)
-        n = s["count"] - n0
-        if n > 0:
-            avs[ids[i]] = {k: v / n for k, v in s.items() if k != "count"}
-        else:
-            # log polygon id if it has no climate intersection, 
-            # if the number of pixels with climate type 0 is equal to the total number of pixels
-            # this is the case for some polygons with area intersecting raster grids classified as 0 only
+        if n0 == s["count"]:
+            # Print the polygon id if it has no climate intersection, that is
+            # if the number of pixels with climate type 0 is equal to the total number of pixels.
+            # This is the case for some polygons with area intersecting raster grids classified as 0 only
             # climate class 0 is body of water
             LOGGER.info(f"Polygon {ids[i]} has {n0} pixels with climate type 0")
             avs[ids[i]] = {0: 1.0}
+        else:
+            n = s["count"] - n0
+            avs[ids[i]] = {k: v / n for k, v in s.items() if (k != "count" and k != 0)} # do not include the counts that correspond to intersections with a body of water
 
     # log some statistics of what ran
     m0 = np.mean([len(m) == 1 for m in avs.values()])
@@ -91,13 +90,8 @@ def main(cfg):
     LOGGER.info(f"Fraction of locations more than two climates: {100 * m2:.2f}%")
     LOGGER.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
-    # save files
     intermediate_dir = f"data/intermediate/climate_pcts/climate_pcts_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}"
-    os.makedirs(intermediate_dir, exist_ok=True)
     pcts_file = f"{intermediate_dir}/pcts_file.json"
-    class_file = f"{intermediate_dir}/class_file.csv"
-    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
-
     LOGGER.info(f"Saving pcts to {pcts_file}")
     with open(pcts_file, "w") as f:
         json.dump(avs, f)
@@ -106,12 +100,14 @@ def main(cfg):
     clkey = cfg.climate_keys
 
     modes = [max(m.keys(), key=m.get) for m in avs.values()]
-    class_df = pd.DataFrame({"climate_type_num": modes, "id": ids})
+    class_df = pd.DataFrame({"climate_type_num": modes, "id": ids}) 
     codedict_short = {k: v[0] for k, v in clkey.items()}
     codedict_long = {k: v[1] for k, v in clkey.items()}
-    class_df["climate_type_short"] = class_df["climate_type_num"].map(codedict_short)
-    class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long)
+    class_df["climate_type_short"] = class_df["climate_type_num"].map(codedict_short) # if a polygon intersects only with water then there is no assignment
+    class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
     class_df = class_df.drop(columns="climate_type_num")
+
+    class_file = f"{intermediate_dir}/class_file.csv"
     LOGGER.info(f"Saving classification to {class_file}")
     class_df.to_csv(class_file, index=False)
 
@@ -127,8 +123,10 @@ def main(cfg):
 
     output_df = pd.merge(class_df, output_df, on="id")
 
-    LOGGER.info(f"Saving output into data/output/climate_types_zip_zcta \n {output_df.head()}")
-    output_df.to_csv(output_file , index=False)
+    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
+    LOGGER.info(f"Saving output to {output_file}")
+    output_df.set_index("id", inplace=True)
+    output_df.to_parquet(output_file)
 
 if __name__ == "__main__":
     main()
