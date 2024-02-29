@@ -123,7 +123,7 @@ def main(cfg):
 
     output_df = pd.merge(class_df, output_df, on="id")
 
-    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
+    output_file = f"data/output/climate_types_raster2polygon/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.parquet"
     LOGGER.info(f"Saving output to {output_file}")
     output_df.set_index("id", inplace=True)
     output_df.to_parquet(output_file)
