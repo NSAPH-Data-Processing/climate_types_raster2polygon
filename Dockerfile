@@ -16,5 +16,5 @@ RUN mamba env update -n base -f requirements.yml
 RUN python utils/create_dir_paths.py datapaths=datapaths.yaml
 
 # snakemake --configfile conf/config.yaml --cores 4 -C shapefile_polygon_name=zcta
-ENTRYPOINT ["snakemake", "--configfile", "conf/config.yaml"]
+ENTRYPOINT ["snakemake"]
 CMD ["--cores", "1", "-C", "shapefile_year=2015", "shapefile_polygon_name=county"]
