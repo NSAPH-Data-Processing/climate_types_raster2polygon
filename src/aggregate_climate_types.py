@@ -90,8 +90,8 @@ def main(cfg):
     LOGGER.info(f"Fraction of locations more than two climates: {100 * m2:.2f}%")
     LOGGER.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
-    intermediate_dir = f"data/intermediate/climate_pcts/climate_pcts_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}"
-    pcts_file = f"{intermediate_dir}/pcts_file.json"
+    intermediate_dir = f"data/intermediate/climate_pcts"
+    pcts_file = f"{intermediate_dir}/climate_pcts_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.json"
     LOGGER.info(f"Saving pcts to {pcts_file}")
     with open(pcts_file, "w") as f:
         json.dump(avs, f)
@@ -107,7 +107,7 @@ def main(cfg):
     class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
     class_df = class_df.drop(columns="climate_type_num")
 
-    class_file = f"{intermediate_dir}/class_file.csv"
+    class_file = f"{intermediate_dir}/climate_types_{cfg.shapefile_polygon_name}_{cfg.shapefile_year}.csv"
     LOGGER.info(f"Saving classification to {class_file}")
     class_df.to_csv(class_file, index=False)
 
