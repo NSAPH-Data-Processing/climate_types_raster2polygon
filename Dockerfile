@@ -13,6 +13,8 @@ RUN mamba env update -n base -f requirements.yml
 #&& mamba clean -a
 
 # Create paths to data placeholders
-RUN python utils/create_dir_paths.py
+RUN python utils/create_dir_paths.py datapaths=datapaths.yaml
 
-CMD ["snakemake", "--cores", "1", "--configfile", "conf/config.yaml"]
+# snakemake --configfile conf/config.yaml --cores 4 -C shapefile_polygon_name=zcta
+ENTRYPOINT ["snakemake", "--configfile", "conf/config.yaml"]
+CMD ["--cores", "1", "-C", "shapefile_year=2015", "shapefile_polygon_name=county"]
