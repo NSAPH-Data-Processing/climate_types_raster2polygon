@@ -1,41 +1,32 @@
+import yaml
+
+conda: "requirements.yaml"
+configfile: "conf/config.yaml"
+
+year=config["shapefile_year"]
+polygon_name=config["shapefile_polygon_name"]
+
 rule all:
     input:
-        expand("data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.csv", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"])
+        f"data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.parquet"
 
 rule download_climate_types:
     output:
-        expand("data/input/climate_types/{climate_types_file}", 
-               climate_types_file=config["climate_types_file"])
+        f"data/input/climate_types/{config['climate_types_file']}"
     shell:
         "python src/download_climate_types.py"
 
 rule download_shapefiles:
     output:
-        expand("data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.{ext}", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"], 
-               ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]) 
+        f"data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
     shell:
         "python src/download_shapefile.py"
 
 rule aggregate_climate_types:
     input:
-        expand("data/input/climate_types/{climate_types_file}", 
-               climate_types_file=config["climate_types_file"]),
-        expand("data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"])
+        f"data/input/climate_types/{config['climate_types_file']}", 
+        f"data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp"
     output:
-        expand("data/intermediate/climate_pcts/climate_pcts_{polygon_name}_{year}/pcts_file.json", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"]),
-        expand("data/intermediate/climate_pcts/climate_pcts_{polygon_name}_{year}/class_file.csv", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"]),
-        expand("data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.csv", 
-               polygon_name=config["shapefile_polygon_name"], 
-               year=config["shapefile_year"])
+        f"data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.parquet"
     shell:
-        "python src/aggregate_climate_types.py"
+        "python src/aggregate_climate_types.py shapefile_year={year} shapefile_polygon_name={polygon_name}"
