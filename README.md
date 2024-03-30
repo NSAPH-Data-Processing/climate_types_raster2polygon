@@ -123,11 +123,18 @@ If you are interested in storing the input raw and intermediate data run
 docker run -v ./data:/app/data/ nsaph/climate_types_raster2polygon
 ```
 
-If you want to build your own image use
+### If you want to build your own image use
+
 ```
 docker build -t <image_name> .
 ```
-For multiplatform
+
+To dev or test do 
+```
+docker run --entrypoint /bin/bash -v $(pwd)/:/app -it <image_name> 
+```
+
+For a multiplatform built use
 ```
 docker buildx build --platform linux/amd64,linux/arm64 -t nsaph/census_series:<version> . --push
 ```
