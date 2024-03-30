@@ -20,13 +20,15 @@ rule download_shapefiles:
     output:
         f"data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
     shell:
-        "python src/download_shapefile.py"
+        f"python src/download_shapefile.py shapefile_year={year} shapefile_polygon_name={polygon_name}"
 
 rule aggregate_climate_types:
     input:
         f"data/input/climate_types/{config['climate_types_file']}", 
         f"data/input/shapefiles/shapefile_{polygon_name}_{year}/shapefile.shp"
     output:
-        f"data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.parquet"
+        f"data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{year}.parquet",
+        f"data/intermediate/climate_pcts/climate_pcts_{polygon_name}_{year}.json",
+        f"data/intermediate/climate_pcts/climate_types_{polygon_name}_{year}.csv"
     shell:
-        "python src/aggregate_climate_types.py shapefile_year={year} shapefile_polygon_name={polygon_name}"
+        f"python src/aggregate_climate_types.py shapefile_year={year} shapefile_polygon_name={polygon_name}"
