@@ -1,7 +1,8 @@
 defaults:
-- datapaths: datapaths.yaml
-- shapefiles: shapefiles.yaml
-- climate_keys: climate_keys.yaml
+  - _self_
+  - datapaths: datapaths
+  - shapefiles: shapefiles
+  - climate_keys: climate_keys
 
 # Climate types raw raster information
 climate_types_url:  https://figshare.com/ndownloader/files/12407516
