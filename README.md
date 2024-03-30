@@ -99,7 +99,10 @@ python src/aggregate_climate_types.py
 or run the pipeline:
 
 ```bash
-snakemake --cores 1 --configfile conf/config.yaml
+# to generate county aggregations
+snakemake --cores 1 
+# to generate zcta aggregations
+snakemake --cores 1 -C shapefile_polygon_name=zcta
 ```
 
 ## Dockerized Pipeline
@@ -114,13 +117,10 @@ mkdir <path>/climate_types_raster2polygon
 
 ```bash
 docker pull nsaph/climate_types_raster2polygon
-docker run -v <path>/climate_types_raster2polygon/:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
-```
-
-If you are interested in storing the input raw and intermediate data run
-
-```bash
-docker run -v ./data:/app/data/ nsaph/climate_types_raster2polygon
+# to generate county aggregations
+docker run -v <test_path>:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
+# to generate zcta aggregations
+docker run -v <test_path>:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon -C shapefile_polygon_name=zcta
 ```
 
 ### If you want to build your own image use
@@ -131,11 +131,11 @@ docker build -t <image_name> .
 
 To dev or test do 
 ```
-docker run --entrypoint /bin/bash -v $(pwd)/:/app -it <image_name> 
+docker run --entrypoint /bin/bash -v $(pwd)/:/app -it <image> 
 ```
 
 For a multiplatform built use
 ```
-docker buildx build --platform linux/amd64,linux/arm64 -t nsaph/census_series:<version> . --push
+docker buildx build --platform linux/amd64,linux/arm64 -t <user>/<image>:<version> . --push
 ```
 Remember this step is unnecessary as the built image is availabe under `nsaph/climate_types_raster2polygon:latest`.
