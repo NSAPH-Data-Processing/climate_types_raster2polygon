@@ -118,9 +118,9 @@ mkdir <path>/climate_types_raster2polygon
 ```bash
 docker pull nsaph/climate_types_raster2polygon
 # to generate county aggregations
-docker run -v <test_path>:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon
+docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon
 # to generate zcta aggregations
-docker run -v <test_path>:/app/data/output/climate_types_raster2polygon nsaph/climate_types_raster2polygon --cores=1 -C shapefile_polygon_name=zcta
+docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon --cores 1 -C shapefile_polygon_name=zcta
 ```
 
 ### If you want to build your own image use
