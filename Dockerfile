@@ -12,6 +12,9 @@ RUN git clone https://github.com/NSAPH-Data-Processing/climate_types_raster2poly
 RUN mamba env update -n base -f requirements.yml 
 #&& mamba clean -a
 
+RUN apt update && apt install -y libsm6 libxext6
+RUN apt-get install -y libxrender-dev
+
 # Create paths to data placeholders
 RUN python utils/create_dir_paths.py datapaths=datapaths.yaml
 
