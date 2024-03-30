@@ -75,20 +75,12 @@ mamba env create -f requirements.yml
 mamba activate <env_name>
 ```
 
-### Input and output paths
+### Create input and output data placeholders 
 
-Determine the configuration file to be used in `cfg.datapaths`. The `input`, `intermediate`, and `output` arguments are used in `utils/create_dir_paths.py` to fix the paths or directories from which a step in the pipeline reads/writes its input/output data inside the corresponding `/data` subfolders.
-
-If `cfg.datapaths` points to `<input_path>` or `<output_path>`, then `utils/create_dir_paths.py` will automatically create a symlink as in the following example:
+Run
 
 ```bash
-export HOME_DIR=$(pwd)
-
-cd $HOME_DIR/data/input/ .
-ln -s <input_path> . 
-
-cd $HOME_DIR/data/output/
-ln -s <output_path> . 
+python utils/create_dir_paths.py 
 ```
 
 ### Pipeline
