@@ -1,0 +1,34 @@
+column_name,description,data_type
+polygon_name,"Administrative boundary (polygon) name",string
+climate_type_short,"Koppen-Geiger climate classification short name assigned to a polygon",string
+climate_type_long,"Koppen-Geiger climate classification long name assigned to a polygon",string
+Af,"Percentage of grids that intersect the polygon classified as Tropical, rainforest",double
+Am,"Percentage of grids that intersect the polygon classified as Tropical, monsoon",double
+Aw,"Percentage of grids that intersect the polygon classified as Tropical, savannah",double
+BWh,"Percentage of grids that intersect the polygon classified as Arid, desert, hot",double
+BWk,"Percentage of grids that intersect the polygon classified as Arid, desert, cold",double
+BSh,"Percentage of grids that intersect the polygon classified as Arid, steppe, hot",double
+BSk,"Percentage of grids that intersect the polygon classified as Arid, steppe, cold",double
+Csa,"Percentage of grids that intersect the polygon classified as Temperate, dry summer, hot summer",double
+Csb,"Percentage of grids that intersect the polygon classified as Temperate, dry summer, warm summer",double
+Csc,"Percentage of grids that intersect the polygon classified as Temperate, dry summer, cold summer",double
+Cwa,"Percentage of grids that intersect the polygon classified as Temperate, dry winter, hot summer",double
+Cwb,"Percentage of grids that intersect the polygon classified as Temperate, dry winter, warm summer",double
+Cwc,"Percentage of grids that intersect the polygon classified as Temperate, dry winter, cold summer",double
+Cfa,"Percentage of grids that intersect the polygon classified as Temperate, no dry season, hot summer",double
+Cfb,"Percentage of grids that intersect the polygon classified as Temperate, no dry season, warm summer",double
+Cfc,"Percentage of grids that intersect the polygon classified as Temperate, no dry season, cold summer",double
+Dsa,"Percentage of grids that intersect the polygon classified as Cold, dry summer, hot summer",double
+Dsb,"Percentage of grids that intersect the polygon classified as Cold, dry summer, warm summer",double
+Dsc,"Percentage of grids that intersect the polygon classified as Cold, dry summer, cold summer",double
+Dsd,"Percentage of grids that intersect the polygon classified as Cold, dry summer, very cold winter",double
+Dwa,"Percentage of grids that intersect the polygon classified as Cold, dry winter, hot summer",double
+Dwb,"Percentage of grids that intersect the polygon classified as Cold, dry winter, warm summer",double
+Dwc,"Percentage of grids that intersect the polygon classified as Cold, dry winter, cold summer",double
+Dwd,"Percentage of grids that intersect the polygon classified as Cold, dry winter, very cold winter",double
+Dfa,"Percentage of grids that intersect the polygon classified as Cold, no dry season, hot summer",double
+Dfb,"Percentage of grids that intersect the polygon classified as Cold, no dry season, warm summer",double
+Dfc,"Percentage of grids that intersect the polygon classified as Cold, no dry season, cold summer",double
+Dfd,"Percentage of grids that intersect the polygon classified as Cold, no dry season, very cold winter",double
+ET,"Percentage of grids that intersect the polygon classified as Polar, tundra",double
+EF,"Percentage of grids that intersect the polygon classified as Polar, frost",double
