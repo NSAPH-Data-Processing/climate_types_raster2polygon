@@ -1,3 +1,5 @@
+[![](<https://img.shields.io/badge/Dataverse-10.7910/DVN/SYNPBS-orange>)](https://www.doi.org/10.7910/DVN/BG0OHO)
+
 # climate_types_raster2polygon
 
 Code to produce spatial aggregations of [Koppen-Geiger climate types](https://www.nature.com/articles/sdata2018214). The spatial aggregation are performed from climate type information from grid/raster (tiff) to polygons (shp).
