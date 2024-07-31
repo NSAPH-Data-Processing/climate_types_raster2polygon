@@ -1,7 +1,7 @@
 defaults:
   - _self_
   - datapaths: datapaths
-  - shapefiles: shapefiles
+  - shapefiles: us_shapefiles
   - climate_keys: climate_keys
 
 # Climate types raw raster information
@@ -14,8 +14,8 @@ climate_types_file: Beck_KG_V1_present_0p0083.tif  # it's the one at highest res
   # - Beck_KG_V1_present_conf_0p5.tif
 
 # Shapefiles information
-shapefile_year: 2015 #to be matched with cfg.shapefiles
-shapefile_polygon_name: county #to be matched with cfg.shapefiles, column name of id in output file
+shapefile_tag: 2015 #to be matched with cfg.shapefiles
+shapefile_polygon_name: zcta #to be matched with cfg.shapefiles, column name of id in output file
 
 hydra:
   run:
