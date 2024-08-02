@@ -25,16 +25,11 @@ def get_global_shapefiles(output_dir):
     # Boundary types
     BOUNDARY_TYPE = ["/ADM0/", "/ADM1/", "/ADM2/", "/ADM3/", "/ADM4/", "/ADM5/"]
 
-    # Get the country ISO codes
-    # allISOcodes = [country.alpha_3 for country in list(pycountry.countries)[1:3]]
-    countries_test = list(pycountry.countries)[1:3]
-
     with open(f"logfile_jsonfiles_{date}.txt", "w") as log_file:
-        for i, c in enumerate(countries_test):
+        for i, c in enumerate(pycountry.countries):
             log_file.write("---------------------------------------------------------------------\n")
-            #find on ISO code
             ISO_CODE3 = c.alpha_3
-            log_file.write(f"Beginning download of {c.name} — ISO Code {ISO_CODE3} — {i + 1} of {len(countries_test)}\n")
+            log_file.write(f"Beginning download of {c.name} — ISO Code {ISO_CODE3} — {i + 1} of {len(pycountry.countries)}\n")
             
             for j, boundary in enumerate(BOUNDARY_TYPE):
                 dl_link = f"{URL}{RELEASE_TYPE}{ISO_CODE3}{boundary}"
