@@ -1,5 +1,5 @@
 # Catalog of shapefiles
-# cfg.shapefile_year and cfg.shapefile_polygon_name are used to match the shapefile to use
+# cfg.shapefile_tag and cfg.shapefile_polygon_name are used to match the shapefile to use
 
 county: #County shapefiles (cartographic boudaries) https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
   2015:
