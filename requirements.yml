@@ -16,4 +16,5 @@ dependencies:
     - snakemake==8.1.2
     - wget==3.2
     - ipykernel==6.29.4
+    - pycountry
     
