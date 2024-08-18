@@ -23,8 +23,12 @@ def convert_gpkg_to_shp(input_dir, output_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert GeoPackage files to Shapefiles")
-    parser.add_argument("--input_dir", help="Directory containing .gpkg files")
-    parser.add_argument("--output_dir", help="Directory to save the converted .shp files")
+    parser.add_argument("--input_dir", 
+                        default="data/aux", 
+                        help="Directory containing .gpkg files")
+    parser.add_argument("--output_dir", 
+                        default="data/aux",
+                        help="Directory to save the converted .shp files")
     args = parser.parse_args()
 
     convert_gpkg_to_shp(args.input_dir, args.output_dir)
