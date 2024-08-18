@@ -17,6 +17,8 @@ def main(cfg):
                 LOGGER.info(f"Subfolder {subfolder_path} already exists.")
                 continue
             if subfolder_link is not None:
+                #convert relative path to absolute path
+                subfolder_link = os.path.abspath(subfolder_link)
                 os.symlink(subfolder_link, subfolder_path)
                 LOGGER.info(f"Created symlink {subfolder_path} -> {subfolder_link}")
             else:
