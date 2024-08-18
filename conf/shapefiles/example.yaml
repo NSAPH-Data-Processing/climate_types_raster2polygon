@@ -1,15 +1,9 @@
-# Catalog of shapefiles
-# cfg.shapefile_tag and cfg.shapefile_polygon_name are used to match the shapefile to use
-
-CAN: 
-  ADM2:
+CAN_ADM2:
     url: null
     idvar: shapeID
-MEX:
-  ADM2:
+MEX_ADM2:
     url: null
     idvar: shapeID
-USA:
-  ADM2:
+USA_ADM2:
     url: null
     idvar: shapeID
