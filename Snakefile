@@ -26,7 +26,7 @@ rule download_climate_types:
 rule aggregate_climate_types:
     input:
         f"data/input/climate_types/{config['climate_types_file']}", 
-        f"data/input/shapefiles/shapefile_{polygon_name}_{tag}/shapefile.shp"
+        f"data/input/shapefiles/{polygon_name}_{tag}/{polygon_name}_{tag}.shp"
     output:
         f"data/output/climate_types_raster2polygon/climate_types_{polygon_name}_{tag}.parquet",
         f"data/intermediate/climate_pcts/climate_pcts_{polygon_name}_{tag}.json",
