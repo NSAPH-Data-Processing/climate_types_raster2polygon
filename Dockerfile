@@ -18,6 +18,6 @@ RUN apt-get install -y libxrender-dev
 # Create paths to data placeholders
 RUN python utils/create_dir_paths.py datapaths=datapaths.yaml
 
-# snakemake --configfile conf/config.yaml --cores 4 -C shapefile_polygon_name=zcta
+# snakemake --configfile conf/config.yaml --cores 4
 ENTRYPOINT ["snakemake"]
 CMD ["--cores", "1", "--configfile", "conf/config.yaml"]
