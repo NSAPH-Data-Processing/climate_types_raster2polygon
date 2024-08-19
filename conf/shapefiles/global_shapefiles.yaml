@@ -1,15 +1,14 @@
-# Catalog of shapefiles
-# cfg.shapefile_tag and cfg.shapefile_polygon_name are used to match the shapefile to use
+#TODO: is it possible to have a single shapefile for all countries?
 
-CAN: 
-  ADM3all:
+global_ADM1:
     url: null
-    idvar: shapeID_3
-MEX:
-  ADM2all:
+    idvar: shapeID
+    output_idvar: id
+global_ADM2:
     url: null
-    idvar: shapeID_2
-USA:
-  ADM2all:
+    idvar: shapeID
+    output_idvar: id
+global_ADM3:
     url: null
-    idvar: shapeID_2
+    idvar: shapeID
+    output_idvar: id

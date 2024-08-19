@@ -101,10 +101,7 @@ python src/aggregate_climate_types.py
 or run the pipeline:
 
 ```bash
-# to generate county aggregations
 snakemake --cores 1 
-# to generate zcta aggregations
-snakemake --cores 1 -C shapefile_polygon_name=zcta
 ```
 
 ## Dockerized Pipeline
@@ -122,7 +119,7 @@ docker pull nsaph/climate_types_raster2polygon
 # to generate county aggregations
 docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon
 # to generate zcta aggregations
-docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon --cores 1 -C shapefile_polygon_name=zcta
+docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon --cores 1 
 ```
 
 ### If you want to build your own image use
