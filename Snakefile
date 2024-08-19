@@ -27,9 +27,9 @@ rule download_climate_types:
 # temporarily removing download step in snakemake
 # rule download_shapefiles:
 #     output:
-#         f"data/input/shapefiles/shapefile_{polygon_name}_{tag}/shapefile.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
+#         f"data/input/shapefiles/{{shapefile_name}}/{{shapefile_name}}.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
 #     shell:
-#         f"python src/download_shapefile.py shapefile_tag={tag} shapefile_polygon_name={polygon_name}"
+#         f"python src/download_us_shapefile.py"
 
 rule aggregate_climate_types:
     input:
