@@ -10,6 +10,7 @@ defaults_dict = {key: value for d in config['defaults'] if isinstance(d, dict) f
 shapefiles_cfg = yaml.safe_load(open(f"conf/shapefiles/{defaults_dict['shapefiles']}.yaml", 'r'))
 # == Define variables ==
 shapefile_list = shapefiles_cfg.keys()
+print(shapefile_list)
 
 rule all:
     input:
