@@ -127,7 +127,7 @@ def main(cfg):
 
         output_file = f"data/output/climate_types_raster2polygon/climate_types_{shapefile_name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
-        output_df.rename(columns={"id": cfg.shapefile_polygon_name}, inplace=True)
+        output_df.rename(columns={"id": cfg.shapefiles[shapefile_name].output_idvar}, inplace=True)
         output_df.to_parquet(output_file)
 
 if __name__ == "__main__":
