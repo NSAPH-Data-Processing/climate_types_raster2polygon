@@ -1,7 +1,7 @@
 defaults:
   - _self_
   - datapaths: datapaths
-  - shapefiles: example
+  - shapefiles: county
   - climate_keys.yaml
 
 # Climate types raw raster information
