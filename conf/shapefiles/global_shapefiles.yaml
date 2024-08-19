@@ -3,9 +3,12 @@
 global_ADM1:
     url: null
     idvar: shapeID
+    output_idvar: id
 global_ADM2:
     url: null
     idvar: shapeID
+    output_idvar: id
 global_ADM3:
     url: null
     idvar: shapeID
+    output_idvar: id
