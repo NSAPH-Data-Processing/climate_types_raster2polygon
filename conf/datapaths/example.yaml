@@ -1,0 +1,10 @@
+# if files are stored within the local copy of the repository, then use null:
+input:
+  climate_types: null
+  shapefiles: data/example/
+
+intermediate:
+  climate_pcts: null
+
+output:
+  climate_types_raster2polygon: null

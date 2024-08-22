@@ -1,0 +1,52 @@
+#ZCTA shapefiles (cartographic boudaries) https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
+zcta_2010:
+  url: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  idvar: ZCTA5
+  output_idvar: zcta
+zcta_2011:
+  url: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  idvar: ZCTA5
+  output_idvar: zcta
+zcta_2012:
+  url: https://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_860_00_500k.zip
+  idvar: ZCTA5
+  output_idvar: zcta
+zcta_2013:
+  url: https://www2.census.gov/geo/tiger/GENZ2013/cb_2013_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2014:
+  url: https://www2.census.gov/geo/tiger/GENZ2014/shp/cb_2014_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2015:
+  url: https://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2016:
+  url: https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2017:
+  url: https://www2.census.gov/geo/tiger/GENZ2017/shp/cb_2017_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2018:
+  url: https://www2.census.gov/geo/tiger/GENZ2018/shp/cb_2018_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+zcta_2019:
+  url: https://www2.census.gov/geo/tiger/GENZ2019/shp/cb_2019_us_zcta510_500k.zip
+  idvar: ZCTA5CE10
+  output_idvar: zcta
+  
+# tl_zcta: #ZCTA shapefiles (tiger line) https://www.census.gov/programs-surveys/geography/guidance/tiger-data-products-guide.html
+#   2000:
+#     url: https://www2.census.gov/geo/tiger/TIGER2010/ZCTA5/2000/tl_2010_us_zcta500.zip # latest ZCTA5CE00 available
+#     idvar: ZCTA5CE00
+#   2010:
+#     url: https://www2.census.gov/geo/tiger/TIGER2020/ZCTA5/tl_2020_us_zcta510.zip # latest ZCTA5CE10 available
+#     idvar: ZCTA5CE10
+#   2020: 
+#     url: https://www2.census.gov/geo/tiger/TIGER2022/ZCTA520/tl_2022_us_zcta520.zip # latest ZCTA5CE20 available
+#     idvar: ZCTA5CE20
