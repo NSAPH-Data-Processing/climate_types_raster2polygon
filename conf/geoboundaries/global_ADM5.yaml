@@ -1,0 +1,24 @@
+- name: IND_ADM5
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM5/geoBoundaries-IND-ADM5.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: CAF_ADM5
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CAF/ADM5/geoBoundaries-CAF-ADM5.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: RWA_ADM5
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/RWA/ADM5/geoBoundaries-RWA-ADM5.geojson
+  year: 2012
+  idvar: shapeID
+  output_idvar: id
+
+- name: FRA_ADM5
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FRA/ADM5/geoBoundaries-FRA-ADM5.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+

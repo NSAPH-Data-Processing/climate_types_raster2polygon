@@ -1,0 +1,1182 @@
+- name: MAR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MAR/ADM1/geoBoundaries-MAR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: NOR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NOR/ADM1/geoBoundaries-NOR-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: AFG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AFG/ADM1/geoBoundaries-AFG-ADM1.geojson
+  year: 2007
+  idvar: shapeID
+  output_idvar: id
+
+- name: ARG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ARG/ADM1/geoBoundaries-ARG-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: KEN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KEN/ADM1/geoBoundaries-KEN-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: PRY_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PRY/ADM1/geoBoundaries-PRY-ADM1.geojson
+  year: 2012
+  idvar: shapeID
+  output_idvar: id
+
+- name: SUR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SUR/ADM1/geoBoundaries-SUR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: PSE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PSE/ADM1/geoBoundaries-PSE-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: IDN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IDN/ADM1/geoBoundaries-IDN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: KNA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KNA/ADM1/geoBoundaries-KNA-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: AZE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AZE/ADM1/geoBoundaries-AZE-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: LAO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LAO/ADM1/geoBoundaries-LAO-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: FRA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FRA/ADM1/geoBoundaries-FRA-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: SSD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SSD/ADM1/geoBoundaries-SSD-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: MHL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MHL/ADM1/geoBoundaries-MHL-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BHR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BHR/ADM1/geoBoundaries-BHR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BLZ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BLZ/ADM1/geoBoundaries-BLZ-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: KOR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KOR/ADM1/geoBoundaries-KOR-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: TUN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUN/ADM1/geoBoundaries-TUN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: GNQ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GNQ/ADM1/geoBoundaries-GNQ-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: ISL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ISL/ADM1/geoBoundaries-ISL-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: QAT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/QAT/ADM1/geoBoundaries-QAT-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: GUY_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GUY/ADM1/geoBoundaries-GUY-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SRB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SRB/ADM1/geoBoundaries-SRB-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: KHM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KHM/ADM1/geoBoundaries-KHM-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: URY_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/URY/ADM1/geoBoundaries-URY-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: GIN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GIN/ADM1/geoBoundaries-GIN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MDA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MDA/ADM1/geoBoundaries-MDA-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: BGR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BGR/ADM1/geoBoundaries-BGR-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: LIE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LIE/ADM1/geoBoundaries-LIE-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MNG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MNG/ADM1/geoBoundaries-MNG-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: TZA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TZA/ADM1/geoBoundaries-TZA-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: PAN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PAN/ADM1/geoBoundaries-PAN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: COM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/COM/ADM1/geoBoundaries-COM-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: UKR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/UKR/ADM1/geoBoundaries-UKR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BRN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRN/ADM1/geoBoundaries-BRN-ADM1.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: PLW_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PLW/ADM1/geoBoundaries-PLW-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: HTI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/HTI/ADM1/geoBoundaries-HTI-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ITA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ITA/ADM1/geoBoundaries-ITA-ADM1.geojson
+  year: 2023
+  idvar: shapeID
+  output_idvar: id
+
+- name: EST_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/EST/ADM1/geoBoundaries-EST-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: SLV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLV/ADM1/geoBoundaries-SLV-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: LKA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LKA/ADM1/geoBoundaries-LKA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SAU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SAU/ADM1/geoBoundaries-SAU-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: JOR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/JOR/ADM1/geoBoundaries-JOR-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: BLR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BLR/ADM1/geoBoundaries-BLR-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: SDN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SDN/ADM1/geoBoundaries-SDN-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: PRK_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PRK/ADM1/geoBoundaries-PRK-ADM1.geojson
+  year: 2018
+  idvar: shapeID
+  output_idvar: id
+
+- name: BEL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BEL/ADM1/geoBoundaries-BEL-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: NIC_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NIC/ADM1/geoBoundaries-NIC-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CRI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CRI/ADM1/geoBoundaries-CRI-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BFA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BFA/ADM1/geoBoundaries-BFA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: GTM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GTM/ADM1/geoBoundaries-GTM-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: FIN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FIN/ADM1/geoBoundaries-FIN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BRA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRA/ADM1/geoBoundaries-BRA-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: TTO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TTO/ADM1/geoBoundaries-TTO-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: COL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/COL/ADM1/geoBoundaries-COL-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: YEM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/YEM/ADM1/geoBoundaries-YEM-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: VUT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VUT/ADM1/geoBoundaries-VUT-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: GNB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GNB/ADM1/geoBoundaries-GNB-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CPV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CPV/ADM1/geoBoundaries-CPV-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MOZ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MOZ/ADM1/geoBoundaries-MOZ-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SLB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLB/ADM1/geoBoundaries-SLB-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: GBR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GBR/ADM1/geoBoundaries-GBR-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: GHA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GHA/ADM1/geoBoundaries-GHA-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: ERI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ERI/ADM1/geoBoundaries-ERI-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BWA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BWA/ADM1/geoBoundaries-BWA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CZE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CZE/ADM1/geoBoundaries-CZE-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: RUS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/RUS/ADM1/geoBoundaries-RUS-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: PNG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PNG/ADM1/geoBoundaries-PNG-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: SWE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SWE/ADM1/geoBoundaries-SWE-ADM1.geojson
+  year: 2009
+  idvar: shapeID
+  output_idvar: id
+
+- name: LTU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LTU/ADM1/geoBoundaries-LTU-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BIH_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/90a1d52/releaseData/gbOpen/BIH/ADM1/geoBoundaries-BIH-ADM1.geojson
+  year: 2013
+  idvar: shapeID
+  output_idvar: id
+
+- name: PER_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/90a1d52/releaseData/gbOpen/PER/ADM1/geoBoundaries-PER-ADM1.geojson
+  year: 2008
+  idvar: shapeID
+  output_idvar: id
+
+- name: KAZ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KAZ/ADM1/geoBoundaries-KAZ-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: IRL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IRL/ADM1/geoBoundaries-IRL-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: HUN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/HUN/ADM1/geoBoundaries-HUN-ADM1.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: CMR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CMR/ADM1/geoBoundaries-CMR-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: NER_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NER/ADM1/geoBoundaries-NER-ADM1.geojson
+  year: 2012
+  idvar: shapeID
+  output_idvar: id
+
+- name: TUR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUR/ADM1/geoBoundaries-TUR-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: CUB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CUB/ADM1/geoBoundaries-CUB-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: DMA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DMA/ADM1/geoBoundaries-DMA-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: BOL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BOL/ADM1/geoBoundaries-BOL-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: TCD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TCD/ADM1/geoBoundaries-TCD-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CHN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CHN/ADM1/geoBoundaries-CHN-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: MUS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MUS/ADM1/geoBoundaries-MUS-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SGP_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SGP/ADM1/geoBoundaries-SGP-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: PHL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/41af8f1/releaseData/gbOpen/PHL/ADM1/geoBoundaries-PHL-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: DNK_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DNK/ADM1/geoBoundaries-DNK-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: SVK_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SVK/ADM1/geoBoundaries-SVK-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: COD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/COD/ADM1/geoBoundaries-COD-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SYC_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SYC/ADM1/geoBoundaries-SYC-ADM1.geojson
+  year: 2018
+  idvar: shapeID
+  output_idvar: id
+
+- name: VEN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VEN/ADM1/geoBoundaries-VEN-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: AGO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AGO/ADM1/geoBoundaries-AGO-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: AND_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AND/ADM1/geoBoundaries-AND-ADM1.geojson
+  year: 2007
+  idvar: shapeID
+  output_idvar: id
+
+- name: BHS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BHS/ADM1/geoBoundaries-BHS-ADM1.geojson
+  year: 09-09-2017 to 24-08-2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: GAB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GAB/ADM1/geoBoundaries-GAB-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: HRV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/HRV/ADM1/geoBoundaries-HRV-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: JPN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/JPN/ADM1/geoBoundaries-JPN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: NLD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NLD/ADM1/geoBoundaries-NLD-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: TON_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TON/ADM1/geoBoundaries-TON-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: IRQ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IRQ/ADM1/geoBoundaries-IRQ-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: ROU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ROU/ADM1/geoBoundaries-ROU-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ECU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ECU/ADM1/geoBoundaries-ECU-ADM1.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: DOM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DOM/ADM1/geoBoundaries-DOM-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: SEN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SEN/ADM1/geoBoundaries-SEN-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: SLE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SLE/ADM1/geoBoundaries-SLE-ADM1.geojson
+  year: 2014
+  idvar: shapeID
+  output_idvar: id
+
+- name: LBY_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LBY/ADM1/geoBoundaries-LBY-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: MDG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MDG/ADM1/geoBoundaries-MDG-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: WSM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/WSM/ADM1/geoBoundaries-WSM-ADM1.geojson
+  year: 2018
+  idvar: shapeID
+  output_idvar: id
+
+- name: BDI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BDI/ADM1/geoBoundaries-BDI-ADM1.geojson
+  year: 2014
+  idvar: shapeID
+  output_idvar: id
+
+- name: NAM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NAM/ADM1/geoBoundaries-NAM-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: THA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/THA/ADM1/geoBoundaries-THA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: BGD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BGD/ADM1/geoBoundaries-BGD-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: BTN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BTN/ADM1/geoBoundaries-BTN-ADM1.geojson
+  year: 2010
+  idvar: shapeID
+  output_idvar: id
+
+- name: GEO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GEO/ADM1/geoBoundaries-GEO-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: AUS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AUS/ADM1/geoBoundaries-AUS-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: USA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/USA/ADM1/geoBoundaries-USA-ADM1.geojson
+  year: 2018
+  idvar: shapeID
+  output_idvar: id
+
+- name: TLS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TLS/ADM1/geoBoundaries-TLS-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: TWN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TWN/ADM1/geoBoundaries-TWN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: POL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/POL/ADM1/geoBoundaries-POL-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: DZA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DZA/ADM1/geoBoundaries-DZA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ETH_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ETH/ADM1/geoBoundaries-ETH-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: UGA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/UGA/ADM1/geoBoundaries-UGA-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SOM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SOM/ADM1/geoBoundaries-SOM-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: STP_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/STP/ADM1/geoBoundaries-STP-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: GMB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GMB/ADM1/geoBoundaries-GMB-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: DJI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DJI/ADM1/geoBoundaries-DJI-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: IRN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IRN/ADM1/geoBoundaries-IRN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ISR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ISR/ADM1/geoBoundaries-ISR-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: NGA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NGA/ADM1/geoBoundaries-NGA-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: ZAF_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ZAF/ADM1/geoBoundaries-ZAF-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: BRB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BRB/ADM1/geoBoundaries-BRB-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: SVN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SVN/ADM1/geoBoundaries-SVN-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: CYP_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CYP/ADM1/geoBoundaries-CYP-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: NPL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NPL/ADM1/geoBoundaries-NPL-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: NIU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NIU/ADM1/geoBoundaries-NIU-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: MYS_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MYS/ADM1/geoBoundaries-MYS-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: HND_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/HND/ADM1/geoBoundaries-HND-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ATG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ATG/ADM1/geoBoundaries-ATG-ADM1.geojson
+  year: 2009
+  idvar: shapeID
+  output_idvar: id
+
+- name: LVA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LVA/ADM1/geoBoundaries-LVA-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: ZWE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ZWE/ADM1/geoBoundaries-ZWE-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: CHL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CHL/ADM1/geoBoundaries-CHL-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: LSO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LSO/ADM1/geoBoundaries-LSO-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: UZB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/UZB/ADM1/geoBoundaries-UZB-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ALB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ALB/ADM1/geoBoundaries-ALB-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: JAM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/JAM/ADM1/geoBoundaries-JAM-ADM1.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: KWT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KWT/ADM1/geoBoundaries-KWT-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: SWZ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SWZ/ADM1/geoBoundaries-SWZ-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: NRU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NRU/ADM1/geoBoundaries-NRU-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: KIR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KIR/ADM1/geoBoundaries-KIR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MRT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MRT/ADM1/geoBoundaries-MRT-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: MCO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MCO/ADM1/geoBoundaries-MCO-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: AUT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/AUT/ADM1/geoBoundaries-AUT-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: LBN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LBN/ADM1/geoBoundaries-LBN-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: IND_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM1/geoBoundaries-IND-ADM1.geojson
+  year: 2011
+  idvar: shapeID
+  output_idvar: id
+
+- name: ESP_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ESP/ADM1/geoBoundaries-ESP-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MLI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MLI/ADM1/geoBoundaries-MLI-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: LUX_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LUX/ADM1/geoBoundaries-LUX-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: TUV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TUV/ADM1/geoBoundaries-TUV-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: COG_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/COG/ADM1/geoBoundaries-COG-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CAF_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CAF/ADM1/geoBoundaries-CAF-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: NZL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/NZL/ADM1/geoBoundaries-NZL-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ARE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ARE/ADM1/geoBoundaries-ARE-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: FJI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FJI/ADM1/geoBoundaries-FJI-ADM1.geojson
+  year: 2006
+  idvar: shapeID
+  output_idvar: id
+
+- name: TGO_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TGO/ADM1/geoBoundaries-TGO-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: VNM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VNM/ADM1/geoBoundaries-VNM-ADM1.geojson
+  year: 2008
+  idvar: shapeID
+  output_idvar: id
+
+- name: PAK_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PAK/ADM1/geoBoundaries-PAK-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: MEX_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/90a1d52/releaseData/gbOpen/MEX/ADM1/geoBoundaries-MEX-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: VCT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/VCT/ADM1/geoBoundaries-VCT-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: PRT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PRT/ADM1/geoBoundaries-PRT-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: GRD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GRD/ADM1/geoBoundaries-GRD-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: RWA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/RWA/ADM1/geoBoundaries-RWA-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: GRC_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GRC/ADM1/geoBoundaries-GRC-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: TKM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TKM/ADM1/geoBoundaries-TKM-ADM1.geojson
+  year: 2007
+  idvar: shapeID
+  output_idvar: id
+
+- name: MDV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MDV/ADM1/geoBoundaries-MDV-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MNE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MNE/ADM1/geoBoundaries-MNE-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: LCA_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LCA/ADM1/geoBoundaries-LCA-ADM1.geojson
+  year: 2015
+  idvar: shapeID
+  output_idvar: id
+
+- name: CHE_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CHE/ADM1/geoBoundaries-CHE-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: CAN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/41af8f1/releaseData/gbOpen/CAN/ADM1/geoBoundaries-CAN-ADM1.geojson
+  year: 2023
+  idvar: shapeID
+  output_idvar: id
+
+- name: MWI_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MWI/ADM1/geoBoundaries-MWI-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: ARM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ARM/ADM1/geoBoundaries-ARM-ADM1.geojson
+  year: 2005
+  idvar: shapeID
+  output_idvar: id
+
+- name: MLT_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MLT/ADM1/geoBoundaries-MLT-ADM1.geojson
+  year: 2022
+  idvar: shapeID
+  output_idvar: id
+
+- name: SMR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SMR/ADM1/geoBoundaries-SMR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: DEU_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/DEU/ADM1/geoBoundaries-DEU-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: KGZ_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KGZ/ADM1/geoBoundaries-KGZ-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: TJK_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/TJK/ADM1/geoBoundaries-TJK-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: CIV_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/CIV/ADM1/geoBoundaries-CIV-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: LBR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/LBR/ADM1/geoBoundaries-LBR-ADM1.geojson
+  year: 2021
+  idvar: shapeID
+  output_idvar: id
+
+- name: BEN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/BEN/ADM1/geoBoundaries-BEN-ADM1.geojson
+  year: 2012
+  idvar: shapeID
+  output_idvar: id
+
+- name: OMN_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/OMN/ADM1/geoBoundaries-OMN-ADM1.geojson
+  year: 2010
+  idvar: shapeID
+  output_idvar: id
+
+- name: FSM_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/FSM/ADM1/geoBoundaries-FSM-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: SYR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/SYR/ADM1/geoBoundaries-SYR-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MKD_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MKD/ADM1/geoBoundaries-MKD-ADM1.geojson
+  year: 2016
+  idvar: shapeID
+  output_idvar: id
+
+- name: EGY_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/EGY/ADM1/geoBoundaries-EGY-ADM1.geojson
+  year: 2017
+  idvar: shapeID
+  output_idvar: id
+
+- name: MMR_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/MMR/ADM1/geoBoundaries-MMR-ADM1.geojson
+  year: 2019
+  idvar: shapeID
+  output_idvar: id
+
+- name: ZMB_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ZMB/ADM1/geoBoundaries-ZMB-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
+- name: GRL_ADM1
+  url: https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/GRL/ADM1/geoBoundaries-GRL-ADM1.geojson
+  year: 2020
+  idvar: shapeID
+  output_idvar: id
+
