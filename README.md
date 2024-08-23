@@ -82,7 +82,7 @@ mamba activate <env_name>
 Run
 
 ```bash
-python utils/create_dir_paths.py 
+python src/create_dir_paths.py 
 ```
 
 ### Pipeline
