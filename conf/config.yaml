@@ -1,8 +1,10 @@
 defaults:
   - _self_
-  - datapaths: datapaths
-  - shapefiles: county
+  - datapaths: example
+  - geoboundaries: example
   - climate_keys.yaml
+
+shapefiles: ${geoboundaries}
 
 # Climate types raw raster information
 climate_types_url:  https://figshare.com/ndownloader/files/12407516

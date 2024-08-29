@@ -1,0 +1,12 @@
+- name: CAN_ADM2
+  url: null
+  idvar: shapeID
+  output_idvar: id
+- name: MEX_ADM2
+  url: null
+  idvar: shapeID
+  output_idvar: id
+- name: USA_ADM2
+  url: null
+  idvar: shapeID
+  output_idvar: id

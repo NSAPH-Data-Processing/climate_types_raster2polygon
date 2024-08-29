@@ -13,6 +13,7 @@ LOGGER = logging.getLogger(__name__)
 
 @hydra.main(config_path="../conf", config_name="config", version_base=None)
 def main(cfg):
+    print(cfg.shapefiles)
     LOGGER.info("""
         # Extract transform, crs, nodata from raster
     """)
@@ -39,10 +40,10 @@ def main(cfg):
     )
 
     # read shapefile
-    for shapefile_name in cfg.shapefiles:
-        LOGGER.info(f"Shapefile: {shapefile_name}")
-        idvar = cfg.shapefiles[shapefile_name].idvar
-        shp_path = f"data/input/shapefiles/{shapefile_name}/{shapefile_name}.shp"
+    for shapefile in cfg.shapefiles:
+        LOGGER.info(f"Shapefile: {shapefile.name}")
+        idvar = shapefile.idvar
+        shp_path = f"data/input/shapefiles/{shapefile.name}/{shapefile.name}.shp"
         LOGGER.info(f"Reading shapefile {shp_path}")
         shp = gpd.read_file(shp_path)
         LOGGER.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
@@ -93,7 +94,7 @@ def main(cfg):
         LOGGER.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
         intermediate_dir = f"data/intermediate/climate_pcts"
-        pcts_file = f"{intermediate_dir}/climate_pcts_{shapefile_name}.json"
+        pcts_file = f"{intermediate_dir}/climate_pcts_{shapefile.name}.json"
         LOGGER.info(f"Saving pcts to {pcts_file}")
         with open(pcts_file, "w") as f:
             json.dump(avs, f)
@@ -109,7 +110,7 @@ def main(cfg):
         class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
         class_df = class_df.drop(columns="climate_type_num")
 
-        class_file = f"{intermediate_dir}/climate_types_{shapefile_name}.csv"
+        class_file = f"{intermediate_dir}/climate_types_{shapefile.name}.csv"
         LOGGER.info(f"Saving classification to {class_file}")
         class_df.to_csv(class_file, index=False)
 
@@ -125,9 +126,9 @@ def main(cfg):
 
         output_df = pd.merge(class_df, output_df, on="id")
 
-        output_file = f"data/output/climate_types_raster2polygon/climate_types_{shapefile_name}.parquet"
+        output_file = f"data/output/climate_types_raster2polygon/climate_types_{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
-        output_df.rename(columns={"id": cfg.shapefiles[shapefile_name].output_idvar}, inplace=True)
+        output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
         output_df.to_parquet(output_file)
 
 if __name__ == "__main__":
