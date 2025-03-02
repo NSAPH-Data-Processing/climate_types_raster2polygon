@@ -25,7 +25,7 @@ shapefiles_list = list(shapefiles_cfg_dict.keys())
 
 rule all:
     input:
-        expand(f"data/output/climate_types_raster2polygon/climate_types_{{shapefile_name}}.parquet", 
+        expand(f"data/output/present/climate_types_{{shapefile_name}}.parquet", 
             shapefile_name=shapefiles_list
         )
 
@@ -47,7 +47,7 @@ rule aggregate_climate_types:
         f"data/input/climate_types/{cfg.climate_types_file}", 
         f"data/input/shapefiles/{{shapefile_name}}/{{shapefile_name}}.shp"
     output:
-        f"data/output/climate_types_raster2polygon/climate_types_{{shapefile_name}}.parquet",
+        f"data/output/present/climate_types_{{shapefile_name}}.parquet",
         f"data/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
         f"data/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
     params:

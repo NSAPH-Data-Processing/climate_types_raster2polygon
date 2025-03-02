@@ -2,10 +2,10 @@
 
 This folder contains data placeholders. 
 
-* To link entrypoints to the data placeholders decide which `datapaths` configuration file is adequate for your environment and run:
+* To link entrypoints to the data placeholders decide which `datapaths` configuration file is adequate for your pipeline and run:
 
 ```bash
-python utils/create_dir_paths.py datapaths=<filename>
+python utils/create_datapaths.py datapaths=<filename>
 ```
 
 Configuration files for `datapaths` are located in `conf/datapaths`.

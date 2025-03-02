@@ -126,7 +126,7 @@ def main(cfg):
 
         output_df = pd.merge(class_df, output_df, on="id")
 
-        output_file = f"data/output/climate_types_raster2polygon/climate_types_{shapefile.name}.parquet"
+        output_file = f"data/output/present/climate_types_{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
         output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
         output_df.to_parquet(output_file)

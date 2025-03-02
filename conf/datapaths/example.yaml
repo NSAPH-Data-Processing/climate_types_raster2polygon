@@ -7,4 +7,5 @@ intermediate:
   climate_pcts: null
 
 output:
-  climate_types_raster2polygon: null
+  present: null
+  projected: null
