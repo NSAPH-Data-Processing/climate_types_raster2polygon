@@ -35,7 +35,7 @@ rule download_climate_types:
     shell:
         "python src/download_climate_types.py"
 
-# temporarily removing download step in snakemake
+# considering removing download step in snakemake
 # rule download_shapefiles:
 #     output:
 #         f"data/input/shapefiles/{{shapefile_name}}/{{shapefile_name}}.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
