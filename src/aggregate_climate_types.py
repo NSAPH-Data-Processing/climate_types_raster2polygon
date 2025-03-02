@@ -43,7 +43,7 @@ def main(cfg):
     for shapefile in cfg.shapefiles:
         LOGGER.info(f"Shapefile: {shapefile.name}")
         idvar = shapefile.idvar
-        shp_path = f"data/input/shapefiles/{shapefile.name}/{shapefile.name}.shp"
+        shp_path = f"data/input/shapefiles/{shapefile.filename}/{shapefile.filename}.shp"
         LOGGER.info(f"Reading shapefile {shp_path}")
         shp = gpd.read_file(shp_path)
         LOGGER.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
@@ -126,7 +126,7 @@ def main(cfg):
 
         output_df = pd.merge(class_df, output_df, on="id")
 
-        output_file = f"data/output/present/climate_types_{shapefile.name}.parquet"
+        output_file = f"data/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
         output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
         output_df.to_parquet(output_file)

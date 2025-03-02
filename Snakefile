@@ -12,20 +12,22 @@ with hydra.initialize(config_path="conf", version_base=None):
 
 # convert to dict of single shapefile dicts 
 shapefiles_cfg = OmegaConf.to_container(cfg.shapefiles, resolve=True) 
-#print(shapefiles_cfg)
-shapefiles_cfg_dict = {shapefile["name"]: "[" + json.dumps(shapefile).replace('"', '') + "]" for shapefile in shapefiles_cfg}
+# print(shapefiles_cfg)
+shapefiles_cfg_dict = {shapefile["name"]: shapefile for shapefile in shapefiles_cfg}
 #print(shapefiles_cfg_dict)
-shapefiles_list = list(shapefiles_cfg_dict.keys())
-#print(shapefiles_list)
+shapefiles_str_dict = {shapefile["name"]: "[" + json.dumps(shapefile).replace('"', '') + "]" for shapefile in shapefiles_cfg}
+# print(shapefiles_str_dict)
+shapefiles_list = list(shapefiles_str_dict.keys())
+# print(shapefiles_list)
 # print(f"""
-#     python src/aggregate_climate_types.py "+shapefiles={shapefiles_cfg_dict[shapefiles_list[0]]}"
+#     python src/aggregate_climate_types.py "+shapefiles={shapefiles_str_dict[shapefiles_list[0]]}"
 #     """)
 
 #raise ValueError("stop here")
 
 rule all:
     input:
-        expand(f"data/output/present/climate_types_{{shapefile_name}}.parquet", 
+        expand(f"data/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet", 
             shapefile_name=shapefiles_list
         )
 
@@ -45,16 +47,17 @@ rule download_climate_types:
 rule aggregate_climate_types:
     input:
         f"data/input/climate_types/{cfg.climate_types_file}", 
-        f"data/input/shapefiles/{{shapefile_name}}/{{shapefile_name}}.shp"
+        lambda wildcards: f"data/input/shapefiles/{shapefiles_cfg_dict[wildcards.shapefile_name]['filename']}"
     output:
-        f"data/output/present/climate_types_{{shapefile_name}}.parquet",
+        f"data/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet",
         f"data/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
         f"data/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
     params:
-        shapefile_name = lambda wildcards: shapefiles_cfg_dict[wildcards.shapefile_name]
+        shapefiles = lambda wildcards: shapefiles_str_dict[wildcards.shapefile_name]
     shell:
         (f"""
         echo {{wildcards.shapefile_name}}
-        python src/aggregate_climate_types.py "+shapefiles={{params.shapefile_name}}"
+        echo {{params.shapefiles}}
+        python src/aggregate_climate_types.py "+shapefiles={{params.shapefiles}}"
         """)
 #python src/aggregate_climate_types.py "+shapefiles=[{name: CAN_ADM2, url: null, idvar: shapeID, output_idvar: id}]"
