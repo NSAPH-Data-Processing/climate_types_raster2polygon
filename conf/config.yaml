@@ -5,7 +5,6 @@ defaults:
   - climate_keys.yaml
 
 shapefiles: ${geoboundaries} #TODO temporary hack for snakemake integratiom, adapt to hydra with overrides using a snake_config.yaml
-geoboundaries_name: county
 
 # Climate types raw raster information
 climate_types_url:  https://figshare.com/ndownloader/files/12407516
