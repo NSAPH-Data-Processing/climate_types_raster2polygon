@@ -7,5 +7,5 @@ intermediate:
   climate_pcts: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/.intermediate/county/
 
 output:
-  present: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/present/county_static/
-  projected: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/projected/county_static/
+  present: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/present/county_yearly/
+  projected: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/projected/county_yearly/
