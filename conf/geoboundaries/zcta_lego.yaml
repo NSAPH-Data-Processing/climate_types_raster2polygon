@@ -82,11 +82,4 @@
   filename: us_shapefile__census__zcta_yearly__2020
   idvar: zcta
   output_idvar: zcta
-- name: zcta_2021
-  filename: us_shapefile__census__zcta_yearly__2021
-  idvar: zcta
-  output_idvar: zcta
-- name: zcta_2022
-  filename: us_shapefile__census__zcta_yearly__2022
-  idvar: zcta
-  output_idvar: zcta
+
