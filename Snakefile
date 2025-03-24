@@ -38,6 +38,7 @@ rule download_climate_types:
         "python src/download_climate_types.py"
 
 # considering removing download step in snakemake
+# currently it is necessary to point to a folder populated with shapefiles for snakemake to run
 # rule download_shapefiles:
 #     output:
 #         f"data/input/shapefiles/{{shapefile_name}}/{{shapefile_name}}.shp" #ext = ["shp", "shx", "dbf", "prj", "cpg", "xml"]
