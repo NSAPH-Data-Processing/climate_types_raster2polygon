@@ -1,4 +1,3 @@
-#null means base_path is data/
 base_path: data/zcta_lego
 
 # if files are stored within the local copy of the repository, then use null:
