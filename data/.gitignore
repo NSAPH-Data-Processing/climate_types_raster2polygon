@@ -1,0 +1,5 @@
+*
+!.gitignore
+!example/*
+!README.md
+!data_dictionary.csv

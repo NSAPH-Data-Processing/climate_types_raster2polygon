@@ -16,7 +16,7 @@ RUN apt update && apt install -y libsm6 libxext6
 RUN apt-get install -y libxrender-dev
 
 # Create paths to data placeholders
-RUN python utils/create_dir_paths.py datapaths=datapaths.yaml
+RUN python utils/create_datapaths.py datapaths=datapaths.yaml
 
 # snakemake --configfile conf/config.yaml --cores 4
 ENTRYPOINT ["snakemake"]

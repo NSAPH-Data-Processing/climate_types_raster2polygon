@@ -1,12 +1,12 @@
 - name: CAN_ADM2
-  url: null
+  filename: CAN_ADM2
   idvar: shapeID
   output_idvar: id
 - name: MEX_ADM2
-  url: null
+  filename: MEX_ADM2
   idvar: shapeID
   output_idvar: id
 - name: USA_ADM2
-  url: null
+  filename: USA_ADM2
   idvar: shapeID
   output_idvar: id

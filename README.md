@@ -79,11 +79,7 @@ mamba activate <env_name>
 
 ### Create input and output data placeholders 
 
-Run
-
-```bash
-python src/create_dir_paths.py 
-```
+Follow the [README](data/README.md) instructions in the data folder to attach data placeholders to the pipeline.
 
 ### Pipeline
 
@@ -117,9 +113,9 @@ mkdir <path>/climate_types_raster2polygon
 ```bash
 docker pull nsaph/climate_types_raster2polygon
 # to generate county aggregations
-docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon
+docker run -v <test_path>:/app/data/output/present -t nsaph/climate_types_raster2polygon
 # to generate zcta aggregations
-docker run -v <test_path>:/app/data/output/climate_types_raster2polygon -t nsaph/climate_types_raster2polygon --cores 1 
+docker run -v <test_path>:/app/data/output/present -t nsaph/climate_types_raster2polygon --cores 1 
 ```
 
 ### If you want to build your own image use
