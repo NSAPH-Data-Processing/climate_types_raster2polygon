@@ -1,11 +1,15 @@
+#null means base_path is data/
+base_path: null
+
 # if files are stored within the local copy of the repository, then use null:
-input:
-  climate_types: null
-  shapefiles: null
+dirs:
+  input:
+    climate_types: null
+    shapefiles: null
 
-intermediate:
-  climate_pcts: null
+  intermediate:
+    climate_pcts: null
 
-output:
-  present: null
-  projected: null
+  output:
+    present: null
+    projected: null

@@ -1,11 +1,15 @@
+#null means base_path is data/
+base_path: data/county_lego
+
 # if files are stored within the local copy of the repository, then use null:
-input:
-  climate_types: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/raw/
-  shapefiles: /n/dominici_lab/lab/lego/geoboundaries/us_geoboundaries__census/us_shapefile__census/county_yearly/
+dirs:
+  input:
+    climate_types: /n/dominici_lab/lab/lego/environmental/climate_types__koppen_geiger/raw/
+    shapefiles: /n/dominici_lab/lab/lego/geoboundaries/us_geoboundaries__census/us_shapefile__census/county_yearly/
 
-intermediate:
-  climate_pcts: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/.intermediate/county/
+  intermediate:
+    climate_pcts: /n/dominici_lab/lab/lego/environmental/climate_types__koppen_geiger/.intermediate/county/
 
-output:
-  present: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/present/county_yearly/
-  projected: /n/dominici_lab/lab/lego/climate_types__koppen_geiger/projected/county_yearly/
+  output:
+    present: /n/dominici_lab/lab/lego/environmental/climate_types__koppen_geiger/present/county_yearly/
+    projected: /n/dominici_lab/lab/lego/environmental/climate_types__koppen_geiger/projected/county_yearly/
