@@ -17,7 +17,7 @@ def main(cfg):
     LOGGER.info("""
         # Extract transform, crs, nodata from raster
     """)
-    raster_path = f"data/input/climate_types/{cfg.climate_types_file}"
+    raster_path = f"{cfg.datapaths.base_path}/input/climate_types/{cfg.climate_types_file}"
     LOGGER.info(f"Reading raster {raster_path}")
     with rasterio.open(raster_path) as src:
         transform = src.transform
@@ -43,7 +43,7 @@ def main(cfg):
     for shapefile in cfg.shapefiles:
         LOGGER.info(f"Shapefile: {shapefile.name}")
         idvar = shapefile.idvar
-        shp_path = f"data/input/shapefiles/{shapefile.filename}/{shapefile.filename}.shp"
+        shp_path = f"{cfg.datapaths.base_path}/input/shapefiles/{shapefile.filename}/{shapefile.filename}.shp"
         LOGGER.info(f"Reading shapefile {shp_path}")
         shp = gpd.read_file(shp_path)
         LOGGER.info(f"Read shapefile with head\n: {shp.drop(columns='geometry').head()}")
@@ -93,7 +93,7 @@ def main(cfg):
         LOGGER.info(f"Fraction of locations more than two climates: {100 * m2:.2f}%")
         LOGGER.info(f"Fraction of locations with ties: {100 * frac_ties:.2f}%")
 
-        intermediate_dir = f"data/intermediate/climate_pcts"
+        intermediate_dir = f"{cfg.datapaths.base_path}/intermediate/climate_pcts"
         pcts_file = f"{intermediate_dir}/climate_pcts_{shapefile.name}.json"
         LOGGER.info(f"Saving pcts to {pcts_file}")
         with open(pcts_file, "w") as f:
@@ -126,7 +126,7 @@ def main(cfg):
 
         output_df = pd.merge(class_df, output_df, on="id")
 
-        output_file = f"data/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
+        output_file = f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
         output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
         output_df.to_parquet(output_file)

@@ -27,13 +27,13 @@ shapefiles_list = list(shapefiles_str_dict.keys())
 
 rule all:
     input:
-        expand(f"data/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet", 
+        expand(f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet", 
             shapefile_name=shapefiles_list
         )
 
 rule download_climate_types:
     output:
-        f"data/input/climate_types/{cfg.climate_types_file}"
+        f"{cfg.datapaths.base_path}/input/climate_types/{cfg.climate_types_file}"
     shell:
         "python src/download_climate_types.py"
 
@@ -46,12 +46,12 @@ rule download_climate_types:
 
 rule aggregate_climate_types:
     input:
-        f"data/input/climate_types/{cfg.climate_types_file}", 
-        lambda wildcards: f"data/input/shapefiles/{shapefiles_cfg_dict[wildcards.shapefile_name]['filename']}"
+        f"{cfg.datapaths.base_path}/input/climate_types/{cfg.climate_types_file}", 
+        lambda wildcards: f"{cfg.datapaths.base_path}/input/shapefiles/{shapefiles_cfg_dict[wildcards.shapefile_name]['filename']}"
     output:
-        f"data/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet",
-        f"data/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
-        f"data/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
+        f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet",
+        f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
+        f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
     params:
         shapefiles = lambda wildcards: shapefiles_str_dict[wildcards.shapefile_name]
     shell:

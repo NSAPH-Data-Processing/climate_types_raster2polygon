@@ -9,7 +9,7 @@ import wget
 def main(cfg):
     url = cfg.climate_types_url
 
-    tgt = "data/input/climate_types"
+    tgt = "{cfg.datapaths.base_path}/input/climate_types"
 
     logging.info(f"Downloading {url}")
     wget.download(url, f"{tgt}.zip")
