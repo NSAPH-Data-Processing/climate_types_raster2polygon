@@ -1,5 +1,5 @@
 *
 !.gitignore
-!example/*
+!shapefiles_example/*
 !README.md
 !data_dictionary.csv

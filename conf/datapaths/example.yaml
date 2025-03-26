@@ -1,11 +1,14 @@
+base_path: data/example
+
 # if files are stored within the local copy of the repository, then use null:
-input:
-  climate_types: null
-  shapefiles: data/example/
+dirs:
+  input:
+    climate_types: null
+    shapefiles: data/shapefiles_example/
 
-intermediate:
-  climate_pcts: null
+  intermediate:
+    climate_pcts: null
 
-output:
-  present: null
-  projected: null
+  output:
+    present: null
+    projected: null

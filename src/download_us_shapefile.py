@@ -9,7 +9,7 @@ def main(cfg):
     for shapefile_name in cfg.shapefiles:
         url = cfg.shapefiles[shapefile_name].url
 
-        tgt = f"data/input/shapefiles/{shapefile_name}"
+        tgt = f"{cfg.datapaths.base_path}/input/shapefiles/{shapefile_name}"
 
         tgtdir = os.path.dirname(tgt)
         tgtfile = os.path.basename(tgt)
