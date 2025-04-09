@@ -2,84 +2,105 @@
   filename: us_shapefile__census__zcta_yearly__2000
   idvar: zcta
   output_idvar: zcta
+  year: 2000
 - name: zcta_2001
   filename: us_shapefile__census__zcta_yearly__2001
   idvar: zcta
   output_idvar: zcta
+  year: 2001
 - name: zcta_2002
   filename: us_shapefile__census__zcta_yearly__2002
   idvar: zcta
   output_idvar: zcta
+  year: 2002
 - name: zcta_2003
   filename: us_shapefile__census__zcta_yearly__2003
   idvar: zcta
   output_idvar: zcta
+  year: 2003
 - name: zcta_2004
   filename: us_shapefile__census__zcta_yearly__2004
   idvar: zcta
   output_idvar: zcta
+  year: 2004
 - name: zcta_2005
   filename: us_shapefile__census__zcta_yearly__2005
   idvar: zcta
   output_idvar: zcta
+  year: 2005
 - name: zcta_2006
   filename: us_shapefile__census__zcta_yearly__2006
   idvar: zcta
   output_idvar: zcta
+  year: 2006
 - name: zcta_2007
   filename: us_shapefile__census__zcta_yearly__2007
   idvar: zcta
   output_idvar: zcta
+  year: 2007
 - name: zcta_2008
   filename: us_shapefile__census__zcta_yearly__2008
   idvar: zcta
   output_idvar: zcta
+  year: 2008
 - name: zcta_2009
   filename: us_shapefile__census__zcta_yearly__2009
   idvar: zcta
   output_idvar: zcta
+  year: 2009
 - name: zcta_2010
   filename: us_shapefile__census__zcta_yearly__2010
   idvar: zcta
   output_idvar: zcta
+  year: 2010
 - name: zcta_2011
   filename: us_shapefile__census__zcta_yearly__2011
   idvar: zcta
   output_idvar: zcta
+  year: 2011
 - name: zcta_2012
   filename: us_shapefile__census__zcta_yearly__2012
   idvar: zcta
   output_idvar: zcta
+  year: 2012
 - name: zcta_2013
   filename: us_shapefile__census__zcta_yearly__2013
   idvar: zcta
   output_idvar: zcta
+  year:2013
 - name: zcta_2014
   filename: us_shapefile__census__zcta_yearly__2014
   idvar: zcta
   output_idvar: zcta
+  year: 2014
 - name: zcta_2015
   filename: us_shapefile__census__zcta_yearly__2015
   idvar: zcta
   output_idvar: zcta
+  year: 2015
 - name: zcta_2016
   filename: us_shapefile__census__zcta_yearly__2016
   idvar: zcta
   output_idvar: zcta
+  year: 2016
 - name: zcta_2017
   filename: us_shapefile__census__zcta_yearly__2017
   idvar: zcta
   output_idvar: zcta
+  year: 2017
 - name: zcta_2018
   filename: us_shapefile__census__zcta_yearly__2018
   idvar: zcta
   output_idvar: zcta
+  year: 2018
 - name: zcta_2019
   filename: us_shapefile__census__zcta_yearly__2019
   idvar: zcta
   output_idvar: zcta
+  year: 2019
 - name: zcta_2020
   filename: us_shapefile__census__zcta_yearly__2020
   idvar: zcta
   output_idvar: zcta
+  year: 2020
 

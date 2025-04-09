@@ -3,91 +3,114 @@
   filename: us_shapefile__census__county_yearly__2000
   idvar: county
   output_idvar: county
+  year: 2000
 - name: county_yearly__2001
   filename: us_shapefile__census__county_yearly__2001
   idvar: county
   output_idvar: county
+  year: 2001
 - name: county_yearly__2002
   filename: us_shapefile__census__county_yearly__2002
   idvar: county
   output_idvar: county
+  year: 2002
 - name: county_yearly__2003
   filename: us_shapefile__census__county_yearly__2003
   idvar: county
   output_idvar: county
+  year: 2003
 - name: county_yearly__2004
   filename: us_shapefile__census__county_yearly__2004
   idvar: county
   output_idvar: county
+  year: 2004
 - name: county_yearly__2005
   filename: us_shapefile__census__county_yearly__2005
   idvar: county
   output_idvar: county
+  year: 2005
 - name: county_yearly__2006
   filename: us_shapefile__census__county_yearly__2006
   idvar: county
   output_idvar: county
+  year: 2006
 - name: county_yearly__2007
   filename: us_shapefile__census__county_yearly__2007
   idvar: county
   output_idvar: county
+  year: 2007
 - name: county_yearly__2008
   filename: us_shapefile__census__county_yearly__2008
   idvar: county
   output_idvar: county
+  year: 2008
 - name: county_yearly__2009
   filename: us_shapefile__census__county_yearly__2009
   idvar: county
   output_idvar: county
+  year: 2009
 - name: county_yearly__2010
   filename: us_shapefile__census__county_yearly__2010
   idvar: county
   output_idvar: county
+  year: 2010
 - name: county_yearly__2011
   filename: us_shapefile__census__county_yearly__2011
   idvar: county
   output_idvar: county
+  year: 2011
 - name: county_yearly__2012
   filename: us_shapefile__census__county_yearly__2012
   idvar: county
   output_idvar: county
+  year: 2012
 - name: county_yearly__2013
   filename: us_shapefile__census__county_yearly__2013
   idvar: county
   output_idvar: county
+  year: 2013
 - name: county_yearly__2014
   filename: us_shapefile__census__county_yearly__2014
   idvar: county
   output_idvar: county
+  year: 2014
 - name: county_yearly__2015
   filename: us_shapefile__census__county_yearly__2015
   idvar: county
   output_idvar: county
+  year: 2015
 - name: county_yearly__2016
   filename: us_shapefile__census__county_yearly__2016
   idvar: county
   output_idvar: county
+  year: 2016
 - name: county_yearly__2017
   filename: us_shapefile__census__county_yearly__2017
   idvar: county
   output_idvar: county
+  year: 2017
 - name: county_yearly__2018
   filename: us_shapefile__census__county_yearly__2018
   idvar: county
   output_idvar: county
+  year: 2018
 - name: county_yearly__2019
   filename: us_shapefile__census__county_yearly__2019
   idvar: county
   output_idvar: county
+  year: 2019
 - name: county_yearly__2020
   filename: us_shapefile__census__county_yearly__2020
   idvar: county
   output_idvar: county
+  year: 2020
 - name: county_yearly__2021
   filename: us_shapefile__census__county_yearly__2021
   idvar: county
   output_idvar: county
+  year: 2021
 - name: county_yearly__2022
   filename: us_shapefile__census__county_yearly__2022
   idvar: county
   output_idvar: county
+  year: 2022
