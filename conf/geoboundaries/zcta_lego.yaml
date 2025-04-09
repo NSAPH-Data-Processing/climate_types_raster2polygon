@@ -67,7 +67,7 @@
   filename: us_shapefile__census__zcta_yearly__2013
   idvar: zcta
   output_idvar: zcta
-  year:2013
+  year: 2013
 - name: zcta_2014
   filename: us_shapefile__census__zcta_yearly__2014
   idvar: zcta
