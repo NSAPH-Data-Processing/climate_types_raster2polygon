@@ -103,11 +103,14 @@ def main(cfg):
         clkey = cfg.climate_keys
 
         modes = [max(m.keys(), key=m.get) for m in avs.values()]
-        class_df = pd.DataFrame({"climate_type_num": modes, "id": ids}) 
+        if shapefile.year is not None:
+            class_df = pd.DataFrame({shapefile.output_idvar: ids, "year": shapefile.year, "climate_type_num": modes}) 
+        else:
+            class_df = pd.DataFrame({shapefile.output_idvar: ids, "climate_type_num": modes})
         codedict_short = {k: v[0] for k, v in clkey.items()}
-        codedict_long = {k: v[1] for k, v in clkey.items()}
-        class_df["climate_type_short"] = class_df["climate_type_num"].map(codedict_short) # if a polygon intersects only with water then there is no assignment
-        class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
+        #codedict_long = {k: v[1] for k, v in clkey.items()}
+        class_df["climate_type"] = class_df["climate_type_num"].map(codedict_short) # if a polygon intersects only with water then there is no assignment
+        #class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
         class_df = class_df.drop(columns="climate_type_num")
 
         class_file = f"{intermediate_dir}/climate_types_{shapefile.name}.csv"
@@ -117,14 +120,16 @@ def main(cfg):
         # transform the percentages into a sparse dataframe
         output_df = []
         for k, v in avs.items():
-            row = {"id": k}
+            row = {shapefile.output_idvar: k}
             for c in clkey.keys():
                 short_name = clkey[c][0]
+                #convert to smallcap
+                short_name = f"pct_{short_name.lower()}"
                 row[short_name] = v.get(c, 0.0)
             output_df.append(row)
         output_df = pd.DataFrame(output_df)
 
-        output_df = pd.merge(class_df, output_df, on="id")
+        output_df = pd.merge(class_df, output_df, on=shapefile.output_idvar)
 
         output_file = f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")

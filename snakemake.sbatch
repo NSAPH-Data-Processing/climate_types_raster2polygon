@@ -5,4 +5,4 @@
 #SBATCH --mem 96GB # memory 
 #SBATCH -t 0-01:00 # time (D-HH:MM)
 
-snakemake --cores 6
+snakemake --cores 3
