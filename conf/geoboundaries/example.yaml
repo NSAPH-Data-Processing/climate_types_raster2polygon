@@ -2,11 +2,14 @@
   filename: CAN_ADM2
   idvar: shapeID
   output_idvar: id
+  year: null
 - name: MEX_ADM2
   filename: MEX_ADM2
   idvar: shapeID
   output_idvar: id
+  year: null
 - name: USA_ADM2
   filename: USA_ADM2
   idvar: shapeID
   output_idvar: id
+  year: null

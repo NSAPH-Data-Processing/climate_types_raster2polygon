@@ -1,7 +1,7 @@
 defaults:
   - _self_
-  - datapaths: example
-  - geoboundaries: example
+  - datapaths: zcta_lego
+  - geoboundaries: zcta_lego
   - climate_keys.yaml
 
 shapefiles: ${geoboundaries} #TODO temporary hack for snakemake integratiom, adapt to hydra with overrides using a snake_config.yaml

@@ -50,7 +50,6 @@ rule aggregate_climate_types:
         f"{cfg.datapaths.base_path}/input/climate_types/{cfg.climate_types_file}", 
         lambda wildcards: f"{cfg.datapaths.base_path}/input/shapefiles/{shapefiles_cfg_dict[wildcards.shapefile_name]['filename']}"
     output:
-        f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet",
         f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
         f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
     params:
@@ -62,3 +61,18 @@ rule aggregate_climate_types:
         python src/aggregate_climate_types.py "+shapefiles={{params.shapefiles}}"
         """)
 #python src/aggregate_climate_types.py "+shapefiles=[{name: CAN_ADM2, url: null, idvar: shapeID, output_idvar: id}]"
+
+rule format_climate_types:
+    input:
+        f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_pcts_{{shapefile_name}}.json",
+        f"{cfg.datapaths.base_path}/intermediate/climate_pcts/climate_types_{{shapefile_name}}.csv"
+    output:
+        f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{{shapefile_name}}.parquet"
+    params:
+        shapefiles = lambda wildcards: shapefiles_str_dict[wildcards.shapefile_name]
+    shell:
+        (f"""
+        echo {{wildcards.shapefile_name}}
+        echo {{params.shapefiles}}
+        python src/format_climate_types.py "+shapefiles={{params.shapefiles}}"
+        """)
