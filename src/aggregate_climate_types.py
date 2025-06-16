@@ -40,7 +40,7 @@ def main(cfg):
     )
 
     # read shapefile
-    for shapefile in cfg.shapefiles:
+    for shapefile in cfg.shapefiles: #loops through all shapefiles in the config
         LOGGER.info(f"Shapefile: {shapefile.name}")
         idvar = shapefile.idvar
         shp_path = f"{cfg.datapaths.base_path}/input/shapefiles/{shapefile.filename}/{shapefile.filename}.shp"
@@ -98,38 +98,24 @@ def main(cfg):
         LOGGER.info(f"Saving pcts to {pcts_file}")
         with open(pcts_file, "w") as f:
             json.dump(avs, f)
-
+        
         # pick the climate with the highest percentage
         clkey = cfg.climate_keys
-
+        
         modes = [max(m.keys(), key=m.get) for m in avs.values()]
-        class_df = pd.DataFrame({"climate_type_num": modes, "id": ids}) 
+        if shapefile.year is not None:
+            class_df = pd.DataFrame({shapefile.output_idvar: ids, "year": shapefile.year, "climate_type_num": modes}) 
+        else:
+            class_df = pd.DataFrame({shapefile.output_idvar: ids, "climate_type_num": modes})
         codedict_short = {k: v[0] for k, v in clkey.items()}
-        codedict_long = {k: v[1] for k, v in clkey.items()}
-        class_df["climate_type_short"] = class_df["climate_type_num"].map(codedict_short) # if a polygon intersects only with water then there is no assignment
-        class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
+        #codedict_long = {k: v[1] for k, v in clkey.items()}
+        class_df["climate_type"] = class_df["climate_type_num"].map(codedict_short) # if a polygon intersects only with water then there is no assignment
+        #class_df["climate_type_long"] = class_df["climate_type_num"].map(codedict_long) # if a polygon intersects only with water then there is no assignment
         class_df = class_df.drop(columns="climate_type_num")
 
         class_file = f"{intermediate_dir}/climate_types_{shapefile.name}.csv"
         LOGGER.info(f"Saving classification to {class_file}")
         class_df.to_csv(class_file, index=False)
-
-        # transform the percentages into a sparse dataframe
-        output_df = []
-        for k, v in avs.items():
-            row = {"id": k}
-            for c in clkey.keys():
-                short_name = clkey[c][0]
-                row[short_name] = v.get(c, 0.0)
-            output_df.append(row)
-        output_df = pd.DataFrame(output_df)
-
-        output_df = pd.merge(class_df, output_df, on="id")
-
-        output_file = f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
-        LOGGER.info(f"Saving output to {output_file}")
-        output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
-        output_df.to_parquet(output_file)
 
 if __name__ == "__main__":
     main()
