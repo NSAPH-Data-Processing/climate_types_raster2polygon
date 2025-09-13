@@ -20,7 +20,7 @@ def main(cfg):
             
         class_file = f"{intermediate_dir}/climate_types_{shapefile.name}.csv"
         LOGGER.info(f"Reading {class_file}")
-        class_df = pd.read_csv(class_file, index=False)
+        class_df = pd.read_csv(class_file, dtype={shapefile.output_idvar: str})
 
         clkey = cfg.climate_keys
 
@@ -40,7 +40,7 @@ def main(cfg):
 
         output_file = f"{cfg.datapaths.base_path}/output/present/climate_types__koppen_geiger__{shapefile.name}.parquet"
         LOGGER.info(f"Saving output to {output_file}")
-        output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
+        #output_df.rename(columns={"id": shapefile.output_idvar}, inplace=True)
         output_df.to_parquet(output_file)
         LOGGER.info(f"Done.")
 
