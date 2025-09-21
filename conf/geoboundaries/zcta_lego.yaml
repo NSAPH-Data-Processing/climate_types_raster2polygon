@@ -103,4 +103,24 @@
   idvar: zcta
   output_idvar: zcta
   year: 2020
+- name: zcta_yearly__2021
+  filename: us_shapefile__census__zcta_yearly__2021
+  idvar: zcta
+  output_idvar: zcta
+  year: 2021
+- name: zcta_yearly__2022
+  filename: us_shapefile__census__zcta_yearly__2022
+  idvar: zcta
+  output_idvar: zcta
+  year: 2022
+- name: zcta_yearly__2023
+  filename: us_shapefile__census__zcta_yearly__2023
+  idvar: zcta
+  output_idvar: zcta
+  year: 2023
+- name: zcta_yearly__2024
+  filename: us_shapefile__census__zcta_yearly__2024
+  idvar: zcta
+  output_idvar: zcta
+  year: 2024
 

@@ -114,3 +114,13 @@
   idvar: county
   output_idvar: county
   year: 2022
+- name: county_yearly__2023
+  filename: us_shapefile__census__county_yearly__2023
+  idvar: county
+  output_idvar: county
+  year: 2023
+- name: county_yearly__2024
+  filename: us_shapefile__census__county_yearly__2024
+  idvar: county
+  output_idvar: county
+  year: 2024
